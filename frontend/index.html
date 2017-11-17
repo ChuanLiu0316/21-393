@@ -7,13 +7,58 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+  <style>
+    
+      .form_group {
+          width: 50%;
+      }
+    
+</style>
 </head>
 <body>
 
-<div class="container">
-  <h1>21393 Food Calculator</h1>
-  <p></p> 
+<div class="text-center">
+  <h1>21-393 Food Calculator</h1> 
+  <p>Use us to determine what to eat for the next few weeks!</p> 
+
+<form>
+  <div class="form-group col-xs-3">
+    <label for="name">Name:</label>
+    <input type="name" class="form-control" id="name">
+  </div>
+  <div class="form-group col-xs-3">
+    <label for="age">Age:</label>
+    <input type="age" class="form-control" id="age">
+  </div>
+  <div class="form-group col-xs-3">
+    <label for="age">Gender:</label>
+    <input type="gender" class="form-control" id="gender">
+  </div>
+<div class="form-group col-xs-3">
+     <label for="sel1">Select list (select one):</label>
+  <select class="form-control" id="sel1">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+  </select>
+  <br>
+  <label for="sel2">Mutiple select list (hold shift to select more than one):</label>
+  <select multiple class="form-control" id="sel2">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+  </select>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+    
 </div>
+
+
 
 </body>
 </html>
