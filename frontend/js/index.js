@@ -27,15 +27,16 @@ function sendUserData(){
     var str = JSON.stringify(data);
     console.log(str);
     // post json to server
-    $.ajax({
-        url: '/localhost:5000',
-        type: 'POST',
-        contentType: 'application/json',
-        data: str,
-        dataType: 'json',
-        success: function(data){
-            console.log(data);
-        }
-    });
-    alert("json posted!");
+    window.localtion.replace("http://yangjuns.info:5000/")
+    // $.ajax({
+    //     url: '/localhost:5000',
+    //     type: 'POST',
+    //     contentType: 'application/json',
+    //     data: str,
+    //     dataType: 'json',
+    //     success: function(data){
+    //         console.log(data);
+    //     }
+    // });
+    // alert("json posted!");
 };
