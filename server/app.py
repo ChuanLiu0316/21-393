@@ -1,4 +1,5 @@
 from flask import Flask
+import json
 app = Flask(__name__)
 
 place_holder_response = {
@@ -10,4 +11,4 @@ place_holder_response = {
 
 @app.route('/')
 def index():
-	return place_holder_response
+	return json.dump(place_holder_response)
