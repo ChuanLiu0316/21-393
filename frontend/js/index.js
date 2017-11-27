@@ -28,7 +28,7 @@ function sendUserData(){
     console.log(str);
     // post json to server
     $.ajax({
-        url: 'yangjuns.info',
+        url: '/localhost:5000',
         type: 'POST',
         contentType: 'application/json',
         data: str,
