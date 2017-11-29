@@ -36,7 +36,7 @@ function sendUserData(){
         success: function(foods){
             console.log(foods);
             console.log(typeof foods)
-            localStorage.setItem("foods", foods);
+            localStorage.setItem("foods", JSON.stringify(foods));
             alert("got back data");
             window.location.href = "menu.html";
         }
