@@ -9,6 +9,11 @@ $(document).ready(function () {
         e.preventDefault();
         sendUserData();
     });
+    $("#op-gender").click(function () {
+        var temp = $(this).text();
+        $(this).text($("#gender").text());
+        $("#gender").html(temp + "\n<span class=\"caret\"></span>");
+    })
 });
 
 function sendUserData(){
@@ -17,7 +22,7 @@ function sendUserData(){
     var height = Number($("#height").val());
     var weight = Number($("#weight").val());
     var age = Number($("#age").val());
-    var gender = $("#gender").val();
+    var gender = $("#gender").text().trim();
     var data= new Object();
     data.height = height;
     data.weight = weight;

@@ -36,21 +36,31 @@
 
 <form>
   <div class="form-group col-xs-3">
-  <label for="height">Height:</label>
+  <label for="height">Height (cm):</label>
   <input type="text" class="form-control" name="height" id="height">
 </div>
   <div class="form-group col-xs-3">
-    <label for="weight">Weight:</label>
+    <label for="weight">Weight (kg):</label>
     <input type="text" class="form-control" name="weight" id="weight">
   </div>
   <div class="form-group col-xs-3">
-    <label for="gender">Gender:</label>
-    <input type="text" class="form-control" name="gender" id="gender">
-  </div>
-  <div class="form-group col-xs-3">
     <label for="age">Age:</label>
+
     <input type="text" class="form-control" name="gender" id="age">
   </div>
+  <div class="form-group col-xs-3">
+    <label for="gender">Gender:</label>
+    <div class="dropdown" >
+      <button id="gender" class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        Male
+        <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labelledby="dropdownMenu1">
+        <li><a href="#" id="op-gender">Female</a></li>
+      </ul>
+    </div>
+  </div>
+
   <input type="submit" class="btn btn-default" value="Submit">
 </form>
 </div>
