@@ -35,6 +35,8 @@ function sendUserData(){
         dataType: 'json',
         success: function(data){
             console.log(data);
+            sessionStorage.setItem("foods", data);
+            window.location.href = "menu.html";
         }
     });
     alert("json posted!");

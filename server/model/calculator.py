@@ -1,4 +1,3 @@
-
 def calculate(weight, height, gender, age):
     '''
     This function compute the calorie(kcal), protein(g), fat(g),
