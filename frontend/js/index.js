@@ -14,7 +14,19 @@ $(document).ready(function () {
         $(this).text($("#gender").text());
         $("#gender").html(temp + "\n<span class=\"caret\"></span>");
     })
+
+    $("form input:text").focusout(function(){
+        var input = $(this).val();
+        var word = "<strong>Oops.</strong> Please enter a valid number.";
+        if(isNaN(input)){
+            $(this).next().html(word);
+        }else{
+            $(this).next().html("");
+        }
+    });
+
 });
+
 
 function sendUserData(){
     console.log("in send user data");

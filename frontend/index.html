@@ -25,6 +25,7 @@
  }
     
 </style>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
 
@@ -38,15 +39,19 @@
   <div class="form-group col-xs-3">
   <label for="height">Height (cm):</label>
   <input type="text" class="form-control" name="height" id="height">
+  <div class="wrongMsg" role="alert"></div>
 </div>
   <div class="form-group col-xs-3">
     <label for="weight">Weight (kg):</label>
     <input type="text" class="form-control" name="weight" id="weight">
+    <div class="wrongMsg" role="alert">
+      </div>
   </div>
   <div class="form-group col-xs-3">
     <label for="age">Age:</label>
-
     <input type="text" class="form-control" name="gender" id="age">
+    <div class="wrongMsg" role="alert">
+     </div>
   </div>
   <div class="form-group col-xs-3">
     <label for="gender">Gender:</label>
@@ -59,10 +64,11 @@
         <li><a href="#" id="op-gender">Female</a></li>
       </ul>
     </div>
+    <div class="wrongMsg" role="alert"></div>
   </div>
-
-  <input type="submit" class="btn btn-default" value="Submit">
+  <div><input type="submit" class="btn btn-primary" value="Submit"></div>
 </form>
+
 </div>
 
 
