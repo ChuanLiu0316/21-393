@@ -39,5 +39,11 @@ function sendUserData(){
             window.location.href = "menu.html";
         }
     });
-    alert("json posted!");
+
+    //test
+    // var foods = "hello";
+    // console.log(foods);
+    // localStorage.setItem("foods", foods);
+    // window.location.href = "menu.html";
+   // alert("json posted!");
 };

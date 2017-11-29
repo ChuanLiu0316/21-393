@@ -1,4 +1,4 @@
 $(document).ready(function(){
-   var data = sessionStorage.getItem("foods");
+   var data = localStorage.getItem("foods");
    console.log(data);
 });
