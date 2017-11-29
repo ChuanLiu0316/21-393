@@ -35,8 +35,9 @@ function sendUserData(){
         dataType: 'json',
         success: function(foods){
             console.log(foods);
+            console.log(typeof foods)
             localStorage.setItem("foods", foods);
-            //alert("got back data");
+            alert("got back data");
             window.location.href = "menu.html";
         }
     });
