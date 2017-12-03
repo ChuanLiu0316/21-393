@@ -86,8 +86,8 @@ class Solver(object):
         breakfasts = [v for v, f in v_f_pairs if f['Meal Time'] =='B']
         lunches = [v for v, f in v_f_pairs if f['Meal Time'] =='L']
         dinners = [v for v, f in v_f_pairs if f['Meal Time'] =='D']
+        p += lpSum(breakfasts) == 5
         p += lpSum(lunches) == 5
-        p += lpSum(dinners) == 5
         p += lpSum(dinners) == 5
 
         # set diversity constraint 
@@ -110,7 +110,7 @@ class Solver(object):
         self.result = p.solve()
         self.p = p
         self.variables = [v.value() for v in vs]
-
+        print self.variables
         self.need_food = []
         for i, v in enumerate(self.variables):
             numbers = int(v)
@@ -125,7 +125,7 @@ class Solver(object):
             elif food['Meal Time'] == 'L':
                 food['Time'] = 1
             else:
-                food['Time'] == 2
+                food['Time'] = 2
 
         for food in self.need_food:
             try:
