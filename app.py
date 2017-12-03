@@ -28,9 +28,19 @@ def js():
 
 @app.route('/calculate', methods=['GET', 'POST'])
 def calculate():
+    from model.solver import *
 	if request.method == 'POST':
 		A = request.data 
-		print A
+        S = Solver(
+            float(A['height']), 
+            float(A['weight'], 
+            float(A['age']), 
+            A['gender']
+        )
+        S.run_2()
+        return json.dumps(S.need_food)
+	return None	
+
 	return json.dumps(place_holder_response)
 
 if __name__ == '__main__':
