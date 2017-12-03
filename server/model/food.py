@@ -3,6 +3,8 @@ LUNCH = 'L'
 DINNER = 'D'
 
 from reader import read_csv
+from copy import copy
+
 class Food(object):
     def __init__(data):
         # type Dict[str, str]
@@ -29,5 +31,16 @@ class Food(object):
     @staticmethod
     def batch_create_by_csv(filename):
         food_entries = read_csv(filename)
-        foods = [Food(data) for data in food_entries]
+        foods = []
+        for food in food_entries:
+            if 'L/D' in food['Meal Time']:
+                # need break up these two.
+                L_instance = copy(food)
+                D_instance = copy(food)
+                L_instance['Meal Time'] = 'L'
+                D_instance['Meal Time'] = 'D'
+                foods.append(L_instance)
+                foods.append(D_instance)
+            else:
+                foods.append(food)   
         return foods
