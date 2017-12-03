@@ -34,12 +34,12 @@ function sendUserData(){
     var height = Number($("#height").val());
     var weight = Number($("#weight").val());
     var age = Number($("#age").val());
-    var gender = $("#gender").text().trim();
+    var gender = $("#gender").text().trim().toLowerCase();
     var data= new Object();
     data.height = height;
     data.weight = weight;
     data.age = age;
-    data.gender = gender;
+    data.gender = gender; // "male" "female"
     console.log(data);
     var str = JSON.stringify(data);
     console.log(str);
