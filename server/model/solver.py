@@ -2,6 +2,8 @@ from scipy.optimize import linprog
 from calculator import calculate
 from food import Food
 from pulp import *
+
+
 def identity(n):
     m=[[0 for x in range(n)] for y in range(n)]
     for i in range(0,n):
@@ -116,6 +118,17 @@ class Solver(object):
             for n in xrange(numbers):
                 self.need_food.append(food)
 
+
+        def format_food(food):
+            if food['Meal Time'] == 'B':
+                food['Meal Time'] = 0
+            elif food['Meal Time'] == 'L':
+                food['Meal Time'] = 1
+            else:
+                food['Meal Time'] == 2:
+
+        for food in self.need_food:
+            format_food(food)
 
         self.need_money = sum([float(food['Price']) for food in self.need_food])        
         self.total_nutritions = {
