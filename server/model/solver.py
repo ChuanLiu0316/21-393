@@ -121,14 +121,17 @@ class Solver(object):
 
         def format_food(food):
             if food['Meal Time'] == 'B':
-                food['Meal Time'] = 0
+                food['Time'] = 0
             elif food['Meal Time'] == 'L':
-                food['Meal Time'] = 1
+                food['Time'] = 1
             else:
-                food['Meal Time'] == 2:
+                food['Time'] == 2
 
         for food in self.need_food:
-            format_food(food)
+            try:
+                format_food(food)
+            except Exception as e:
+                print e   
 
         self.need_money = sum([float(food['Price']) for food in self.need_food])        
         self.total_nutritions = {
