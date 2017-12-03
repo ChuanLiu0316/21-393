@@ -24,12 +24,13 @@ def filter_al(foods, allergies):
 class Solver(object):
 
     def __init__(self, height, weight, age, gender):
-        
+        print "in init"
         (calorie, protein, fat, carb) = calculate(weight, height, gender, age)
         self.cal = float(calorie)
         self.pro = float(protein)
         self.fat = float(fat)
         self.carb = float(carb)
+        print (calorie, protein, fat, carb)
 
         self.nutritions = {
             'Calories':float(calorie),
@@ -61,8 +62,11 @@ class Solver(object):
 
     def run_2(self):
         # GET foods first
-        foods = Food.batch_create_by_csv('data.csv')
-        foods = filter_al(foods, [])
+        try:
+            foods = Food.batch_create_by_csv('data.csv')
+            foods = filter_al(foods, [])
+        except Exception as e:
+            print e
 
         # Create Problem
         p = LpProblem('p', LpMinimize)
@@ -111,6 +115,7 @@ class Solver(object):
             food = foods[i]
             for n in xrange(numbers):
                 self.need_food.append(food)
+
 
         self.need_money = sum([float(food['Price']) for food in self.need_food])        
         self.total_nutritions = {

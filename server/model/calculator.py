@@ -5,6 +5,7 @@ def calculate(weight, height, gender, age):
     his/her weight(kg), height(cm), gender, and age(years).
     '''
     # calorie needed to stay alive
+    print "in calculate"
     if gender == "male":
         bmr = 66.5 + (13.7*weight + 5 * height)-(6.76*age)
     else:
@@ -19,4 +20,5 @@ def calculate(weight, height, gender, age):
     fat = 0.25 * weight * 2.2
     # carbs
     carb = (calorie - (protein  * 4 - 9 * fat)) / 4
+    print "ok"
     return (calorie, protein, fat, carb)

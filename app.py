@@ -1,6 +1,8 @@
 from flask import Flask, request
 import json
 from flask import send_from_directory, send_file
+from server.model.solver import *
+
 app = Flask(__name__)
 
 place_holder_response = {
@@ -26,22 +28,21 @@ def serve_file(path):
 def js():
 	return app.send_static_file('index.js')
 
-@app.route('/calculate', methods=['GET', 'POST'])
+@app.route('/calculate', methods=['POST'])
 def calculate():
-    from model.solver import *
-	if request.method == 'POST':
-		A = request.data 
-        S = Solver(
-            float(A['height']), 
-            float(A['weight'], 
-            float(A['age']), 
-            A['gender']
-        )
-        S.run_2()
-        return json.dumps(S.need_food)
-	return None	
+    A = json.loads(request.data)
 
-	return json.dumps(place_holder_response)
+    try: 
+        S = Solver(A['height'], A['weight'], A['age'], 'male')
+    except Exception as e:
+        print e
+
+    print "ok here2"
+    S.run_2()
+    return json.dumps(S.need_food)
+	#return None	
+
+	#return json.dumps(place_holder_response)
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000)
