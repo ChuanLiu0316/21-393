@@ -125,7 +125,7 @@ class Solver(object):
             elif food['Meal Time'] == 'L':
                 food['Time'] = 1
             else:
-                food['Time'] == 2
+                food['Time'] = 2
 
         for food in self.need_food:
             try:
