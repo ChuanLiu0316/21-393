@@ -2,21 +2,21 @@ $(document).ready(function(){
    var data = JSON.parse(localStorage.getItem('foods'));
    console.log(data);
    var test_food1 = {
-       time: 0,
-       price: 1.4,
-       name: "PB Banana Crunch",
+       Time: 0,
+       Price: 1.4,
+       Name: "PB Banana Crunch",
        restaurant: "underground"
    };
    var test_food2 ={
-       time: 1,
-       price: 4.5,
-       name: "French Toast",
+       Time: 1,
+       Price: 4.5,
+       Name: "French Toast",
        restaurant: "underground"
    };
    var test_food3 ={
-       time: 2,
-       price: 7.8,
-       name: "Mac and Cheese",
+       Time: 2,
+       Price: 7.8,
+       Name: "Mac and Cheese",
        restaurant: "underground"
     };
    var testdata = [test_food1, test_food2, test_food3, test_food1, test_food2, test_food3];
@@ -42,7 +42,7 @@ function showMenu(data){
     for(i = 0 ; i < data.length; i++){
         var food = data[i];
         console.log(food);
-        var nth = counts[food["time"]];
+        var nth = counts[food["Time"]];
         var row = $('#menu1 tbody tr:last');
         console.log(row);
         if(nth >= num_row){
@@ -62,12 +62,12 @@ function showMenu(data){
             console.log("NO NEED ");
         }
         // change the content
-        var selector = "#menu1 tbody tr:nth-child(" + (counts[food["time"]] +1) + ") td:nth-child(" + (food["time"]+2)+")";
+        var selector = "#menu1 tbody tr:nth-child(" + (counts[food["Time"]] +1) + ") td:nth-child(" + (food["Time"]+2)+")";
         console.log(selector);
         var elem = $(selector);
         console.log(elem)
-        elem.text(food["name"] + " ($" + food["price"] + ")");
-        counts[food["time"]]++;
+        elem.text(food["Name"] + " ($" + food["Price"] + ")");
+        counts[food["Time"]]++;
     }
 }
 
