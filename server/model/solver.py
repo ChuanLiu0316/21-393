@@ -108,8 +108,11 @@ class Solver(object):
         p += lpDot([float(food['Price']) for food in foods],vs)
 
         self.result = p.solve()
+        print "alskdjalksdjasdlkajsd"
+        print self.result
         self.p = p
         self.variables = [v.value() for v in vs]
+        
         print self.variables
         self.need_food = []
         for i, v in enumerate(self.variables):

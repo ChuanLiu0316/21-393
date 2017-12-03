@@ -15,10 +15,11 @@ def calculate(weight, height, gender, age):
     activity_level = 1.55
     calorie = activity_level * bmr
     # protein 0.8-1.2 g per pound
-    protein = 1.0 * weight * 2.2
+    protein = 0.8 * weight
     # fat
     fat = 0.25 * weight * 2.2
     # carbs
-    carb = (calorie - (protein  * 4 - 9 * fat)) / 4
+    carb = 0.5 * calorie / 4 
     print "ok"
-    return (5.0*calorie, 5.0*protein, 5.0*fat, 5.0*carb)
+    print (5.0*calorie, 5.0*protein, 5.0*fat, 5.0*carb)
+    return (3.0*calorie, 3.0*protein, 3.0*fat, 3.0*carb)
