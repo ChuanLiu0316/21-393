@@ -21,4 +21,4 @@ def calculate(weight, height, gender, age):
     # carbs
     carb = (calorie - (protein  * 4 - 9 * fat)) / 4
     print "ok"
-    return (calorie, protein, fat, carb)
+    return (5.0*calorie, 5.0*protein, 5.0*fat, 5.0*carb)
