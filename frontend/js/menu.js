@@ -106,7 +106,7 @@ function showFoodDetail(food){
     $("#food_restaurant").html(food["Restaurant"]);
     $("#food_fat").html(food["Fat"]);
     $("#food_protein").html(food["Protein"]);
-    $("#food_calorie").html(food["Calorie"]);
+    $("#food_calorie").html(food["Calories"]);
     $("#food_carb").html(food["Carbohydrates"]);
     $("#food_price").html(food["Price"]);
     $("#windows").show();
