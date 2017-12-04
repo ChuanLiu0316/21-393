@@ -58,7 +58,6 @@ function sendUserData(){
     data.allergy = allergies;
     data.activity = Number((1+$("#myRange").val()/100).toFixed(2)); // set activity level
     console.log(data);
-    return;
     var str = JSON.stringify(data);
     console.log(str);
     // post json to server
