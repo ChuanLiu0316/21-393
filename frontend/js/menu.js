@@ -40,7 +40,7 @@ $(document).ready(function(){
        Vegetarian: "1",
        WheatAllergy: "1"
     }
-    //var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
+    // var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
     showMenu(data);
     computeTotal(data);
     // button to go back to homepage
@@ -112,7 +112,7 @@ function computeTotal(data){
         total_protein += Number(data[i]["Protein"]);
         total_fat += Number(data[i]["Fat"]);
         total_carb += Number(data[i]["Carbohydrates"]);
-        total_cost += Numebr(data[i]["Price"]);
+        total_cost += Number(data[i]["Price"]);
     }
     //menu tds
     var row = $("#energy tr:nth-child(1) td");
