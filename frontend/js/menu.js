@@ -120,7 +120,7 @@ function computeTotal(data){
     row.eq(2).html(total_protein);
     row.eq(3).html(total_fat);
     row.eq(4).html(total_carb);
-    row.eq(4).html(total_cost);
+    row.eq(5).html(total_cost);
 }
 
 function showFoodDetail(food){
