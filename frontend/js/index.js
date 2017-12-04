@@ -35,11 +35,22 @@ function sendUserData(){
     var weight = Number($("#weight").val());
     var age = Number($("#age").val());
     var gender = $("#gender").text().trim().toLowerCase();
+    // get allergy list
+    var allergies = [];
+    var checkbox = $("input[type='checkbox']:checked");
+    for(i =0; i < checkbox.length; i++){
+        allergies.push(checkbox.eq(i).val());
+    }
+    console.log(checkbox);
+    console.log(allergies);
+    var values = $("input[type='checkbox']:checked").val();
+    console.log(values);
     var data= new Object();
     data.height = height;
     data.weight = weight;
     data.age = age;
     data.gender = gender; // "male" "female"
+    data.allergy = allergies;
     console.log(data);
     var str = JSON.stringify(data);
     console.log(str);
