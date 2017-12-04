@@ -50,7 +50,7 @@ $(document).ready(function(){
 
     $('.food_item').click(function(){
         var idx = Number($(this).attr("id").substring(7));
-        console.log(idx);
+        //console.log(idx);
         showFoodDetail(data[idx]);
     });
     var left = ($(document).width() - $('#windows').width())  /2;
@@ -106,11 +106,13 @@ function computeTotal(data){
     var total_protein = 0;
     var total_fat = 0;
     var total_carb = 0;
+    var total_cost = 0;
     for(i=0;i<data.length;i++){
         total_calories += Number(data[i]["Calories"]);
         total_protein += Number(data[i]["Protein"]);
         total_fat += Number(data[i]["Fat"]);
         total_carb += Number(data[i]["Carbohydrates"]);
+        total_cost += Numebr(data[i]["Price"]);
     }
     //menu tds
     var row = $("#energy tr:nth-child(1) td");
@@ -118,6 +120,7 @@ function computeTotal(data){
     row.eq(2).html(total_protein);
     row.eq(3).html(total_fat);
     row.eq(4).html(total_carb);
+    row.eq(4).html(total_cost);
 }
 
 function showFoodDetail(food){
