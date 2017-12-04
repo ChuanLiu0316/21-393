@@ -25,6 +25,15 @@ $(document).ready(function () {
         }
     });
 
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("activity_level");
+    output.innerHTML = (1+ (slider.value /100)).toFixed(2); // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+    slider.oninput = function() {
+        output.innerHTML = (1+(this.value/100)).toFixed(2);
+    }
+
 });
 
 
@@ -41,17 +50,15 @@ function sendUserData(){
     for(i =0; i < checkbox.length; i++){
         allergies.push(checkbox.eq(i).val());
     }
-    console.log(checkbox);
-    console.log(allergies);
-    var values = $("input[type='checkbox']:checked").val();
-    console.log(values);
     var data= new Object();
     data.height = height;
     data.weight = weight;
     data.age = age;
     data.gender = gender; // "male" "female"
     data.allergy = allergies;
+    data.activity = Number((1+$("#myRange").val()/100).toFixed(2)); // set activity level
     console.log(data);
+    return;
     var str = JSON.stringify(data);
     console.log(str);
     // post json to server
