@@ -1,27 +1,27 @@
 $(document).ready(function(){
-   var data = JSON.parse(localStorage.getItem('foods'));
-   console.log(data);
-   var test_food1 = {
+    // var data = JSON.parse(localStorage.getItem('foods'));
+    // console.log(data);
+    var test_food1 = {
        Time: 0,
        Price: 1.4,
        Name: "PB Banana Crunch",
        restaurant: "underground"
-   };
-   var test_food2 ={
+    };
+    var test_food2 ={
        Time: 1,
        Price: 4.5,
        Name: "French Toast",
        restaurant: "underground"
-   };
-   var test_food3 ={
+    };
+    var test_food3 ={
        Time: 2,
        Price: 7.8,
        Name: "Mac and Cheese",
        restaurant: "underground"
     };
 
-   var test_food4={
-       Calorie:"880",
+    var test_food4={
+       Calories:"880",
        Carbohydrates: "116",
        DairyAllergy: "1",
        EggAllergy: "1",
@@ -39,11 +39,11 @@ $(document).ready(function(){
        TreenutAllergy: "0",
        Vegetarian: "1",
        WheatAllergy: "1"
-   }
-   //var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
-   showMenu(data);
-
-   // button to go back to homepage
+    }
+    var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
+    showMenu(data);
+    computeTotal(data);
+    // button to go back to homepage
     $("button").click(function(){
         window.location.href = "index.html";
     })
@@ -70,16 +70,16 @@ function showMenu(data){
     var counts = [0,0,0];
     for(i = 0 ; i < data.length; i++){
         var food = data[i];
-        console.log(food);
+        //console.log(food);
         var nth = counts[food["Time"]];
         var row = $('#menu1 tbody tr:last');
-        console.log(row);
+        //console.log(row);
         if(nth >= num_row){
-            console.log("NEED A NEW ROW !");
+            //console.log("NEED A NEW ROW !");
             // add another row and insert
             row.parent().append("<tr></tr>")
             row = $('#menu1 tr:last');
-            console.log(row);
+            //console.log(row);
             for(var j =0; j < 4;j++){
                 if(j == 0)
                     row.append("<td>" + weekdays[num_row] + "</td>");
@@ -88,17 +88,36 @@ function showMenu(data){
             }
             num_row++;
         }else{
-            console.log("NO NEED ");
+            //console.log("NO NEED ");
         }
         // change the content
         var selector = "#menu1 tbody tr:nth-child(" + (counts[food["Time"]] +1) + ") td:nth-child(" + (food["Time"]+2)+")";
-        console.log(selector);
+        //console.log(selector);
         var elem = $(selector);
         elem.attr("id", 'food_id' + i);
-        console.log(elem)
+        //console.log(elem)
         elem.text(food["Name"] + " ($" + food["Price"] + ")");
         counts[food["Time"]]++;
     }
+}
+
+function computeTotal(data){
+    var total_calories = 0;
+    var total_protein = 0;
+    var total_fat = 0;
+    var total_carb = 0;
+    for(i=0;i<data.length;i++){
+        total_calories += Number(data[i]["Calories"]);
+        total_protein += Number(data[i]["Protein"]);
+        total_fat += Number(data[i]["Fat"]);
+        total_carb += Number(data[i]["Carbohydrates"]);
+    }
+    //menu tds
+    var row = $("#energy tr:nth-child(1) td");
+    row.eq(1).html(total_calories);
+    row.eq(2).html(total_protein);
+    row.eq(3).html(total_fat);
+    row.eq(4).html(total_carb);
 }
 
 function showFoodDetail(food){
