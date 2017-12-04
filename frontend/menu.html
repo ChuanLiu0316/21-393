@@ -60,9 +60,17 @@
           background-color: white;
       }
 
+      .food_details li{
+          text-align: left;
+      }
+
+      .food_details strong{
+          margin-left: 115px;
+      }
+
       #show{ padding:100px; font-size:36px;}
-      #windows { position:absolute; top:100px; left:50px; background: #CCC; width:500px; padding:20px; z-index:999; text-align:center;}
-      #bg{ width:100%; height:100%; position:absolute; top:0; left:0; z-index:1; background:#000; }
+      #windows { position:absolute; top:300px; left:50px; background: #CCC; width:500px; padding:20px; z-index:999; text-align:center;}
+      #mybg{ width:100%; height:100%; position:absolute; top:0; left:0; z-index:1; background:#000; }
 </style>
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -116,103 +124,7 @@
     
 </div>
 </div>
-      
-<div class="item">
-<div class = "container week-table">
-<h1>Menu for Tuesday</h1>
-<table class="table menu-items" id="menu2">
-    <thead>
-    <tr>
-        <th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th>
-    </tr>
-    </thead>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tbody>
 
-    </tbody>
-</table>
-    
-</div>
-</div>
-
-<div class="item">
-<div class = "container week-table">
-<h1>Menu for Wednesday</h1>
-<table class="table menu-items" id="menu3">
-    <thead>
-    <tr>
-        <th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th>
-    </tr>
-    </thead>
-    <tr>
-
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tbody>
-
-    </tbody>
-</table>
-    
-</div>
-    
-</div>
-
-<div class="item">
-<div class = "container week-table">
-<h1>Menu for Thursday</h1>
-<table class="table menu-items" id="menu4">
-    <thead>
-    <tr>
-        <th>Breakfast</th>
-        <th>Lunch</th>
-        <th>Dinner</th>
-    </tr>
-    </thead>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tbody>
-
-    </tbody>
-</table>
-</div>
-</div>
-
-<div class="item">
-<div class = "container week-table">
-    <h1>Menu for Friday</h1>
-    <table class="table menu-items" id="menu5">
-        <thead>
-        <tr>
-            <th>Breakfast</th>
-            <th>Lunch</th>
-            <th>Dinner</th>
-        </tr>
-        </thead>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tbody>
-
-        </tbody>
-    </table>
-</div>
-</div>
-</div>
     
 <div class = "container">
 
@@ -224,9 +136,22 @@ data-slide="prev">&lsaquo;</a>
 </div>                                            
 </div>
 
+
 <div class = "container back">
 <button type="button" class="btn btn-primary">Back to Homepage</button>
 </div>
-    
+
+<div id="windows">
+    <ul class="list-group food_details">
+        <li class="list-group-item"><strong>Name: </strong><span id="food_name"></span></li>
+        <li class="list-group-item"><strong>Restaurant: </strong><span id="food_restaurant"></span></li>
+        <li class="list-group-item"><strong>Price: </strong><span id="food_price"></span> $</li>
+        <li class="list-group-item"><strong>Calorie: </strong><span id="food_calorie"></span></li>
+        <li class="list-group-item"><strong>Protein: </strong><span id="food_protein"></span> g</li>
+        <li class="list-group-item"><strong>Fat: </strong><span id="food_fat"></span> g</li>
+        <li class="list-group-item"><strong>Carbohydrates: </strong><span id="food_carb"></span> g</li>
+    </ul>
+</div>
+    <div id="mybg"></div>
 </body>
 </html>

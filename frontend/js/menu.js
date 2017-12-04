@@ -19,9 +19,29 @@ $(document).ready(function(){
        Name: "Mac and Cheese",
        restaurant: "underground"
     };
-   var testdata = [test_food1, test_food2, test_food3, test_food1, test_food2, test_food3];
+
+   var test_food4={
+       Calorie:"880",
+       Carbohydrates: "116",
+       DairyAllergy: "1",
+       EggAllergy: "1",
+       Fat: "38",
+       FishAllergy: "0",
+       HealthyChoice: "0",
+       MealTime: "B",
+       Name: "French Toast",
+       PeanutAllery: "",
+       Price: "4.5",
+       Protein: "22",
+       Restaurant: "underground",
+       SoyAllergy: "0",
+       Time: 0,
+       TreenutAllergy: "0",
+       Vegetarian: "1",
+       WheatAllergy: "1"
+   }
+   //var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
    showMenu(data);
-   //showMenu(testdata);
 
    // button to go back to homepage
     $("button").click(function(){
@@ -29,9 +49,18 @@ $(document).ready(function(){
     })
 
     $('.food_item').click(function(){
-
+        var idx = Number($(this).attr("id").substring(7));
+        console.log(idx);
+        showFoodDetail(data[idx]);
     });
-
+    var left = ($(document).width() - $('#windows').width())  /2;
+    $('#windows').css({left:left});
+    $("#mybg").hide();
+    $("#windows").hide();
+    $("#mybg").click(function () {
+        $("#windows").hide();
+        $(this).hide();
+    })
 });
 
 function showMenu(data){
@@ -55,7 +84,7 @@ function showMenu(data){
                 if(j == 0)
                     row.append("<td>" + weekdays[num_row] + "</td>");
                 else
-                    row.append("<td class='food_item'></td>");
+                    row.append("<td class='food_item' ></td>");
             }
             num_row++;
         }else{
@@ -65,6 +94,7 @@ function showMenu(data){
         var selector = "#menu1 tbody tr:nth-child(" + (counts[food["Time"]] +1) + ") td:nth-child(" + (food["Time"]+2)+")";
         console.log(selector);
         var elem = $(selector);
+        elem.attr("id", 'food_id' + i);
         console.log(elem)
         elem.text(food["Name"] + " ($" + food["Price"] + ")");
         counts[food["Time"]]++;
@@ -72,11 +102,13 @@ function showMenu(data){
 }
 
 function showFoodDetail(food){
-
-    var html ='<div id="windows">' +
-        ' </div><div id="bg"></div>';
-    $('body').append(html);
-    var left = ($(document).width() - $('#windows').width())  /2;
-    $('#windows').css({left:left});
-    $('#bg').show().height( $(document).height() ).css({'opacity':0.7});
+    $("#food_name").html(food["Name"]);
+    $("#food_restaurant").html(food["Restaurant"]);
+    $("#food_fat").html(food["Fat"]);
+    $("#food_protein").html(food["Protein"]);
+    $("#food_calorie").html(food["Calorie"]);
+    $("#food_carb").html(food["Carbohydrates"]);
+    $("#food_price").html(food["Price"]);
+    $("#windows").show();
+    $('#mybg').show().height( $(document).height() ).css({'opacity':0.7});
 }
