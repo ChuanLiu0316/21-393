@@ -61,6 +61,10 @@ class Solver(object):
                 p += nut_multiplier[nut]*lpDot(coeffs, vs) <= calorie_variable * nut_higher_percentage[nut]
                 p += nut_multiplier[nut]*lpDot(coeffs, vs) >= calorie_variable * nut_lower_percentage[nut]
 
+            else:
+                coeffs = [float(f[nut]) for f in foods]
+                p += lpDot(coeffs, vs) <= calorie_variable + 1.0
+                p += lpDot(coeffs, vs) >= calorie_variable + 1.0
         # set B/L/M constraint 
         v_f_pairs = zip(vs, foods)
         breakfasts = [v for v, f in v_f_pairs if f['Meal Time'] =='B']
