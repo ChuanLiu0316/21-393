@@ -18,9 +18,6 @@ nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
 
 def filter_al(foods, allergies):
     def ok(food):
-        for nut in nutritions:
-            if not food[nut].isdigit():
-                return False
         if not food['Price']:
             return False
         return True
