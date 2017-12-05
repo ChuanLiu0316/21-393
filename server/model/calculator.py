@@ -24,10 +24,10 @@ def calculate(weight, height, gender, age):
     print (5.0*calorie, 5.0*protein, 5.0*fat, 5.0*carb)
     return (4.0*calorie, 4.0*protein, 4.0*fat, 4.0*carb)
 
-def calculateCalorie(weight, height, gender, age, activity):
+def calcCalorie(weight, height, gender, age, activity):
     '''
     This algorithm uses Harris–Benedict BMR with activity level factor
-    to compute calorie needed per day.
+    to compute calories needed per day
     '''
     if gender=="male":
         BMR = 66.5+(13.75*weight)+(5.003*height)-(6.755*age)
