@@ -71,6 +71,9 @@ function sendUserData(){
             console.log(foods);
             console.log(typeof foods)
             localStorage.setItem("foods", JSON.stringify(foods));
+            localStorage.setItem("calories",
+                computeCalories(data.weight,
+                    data.height, data.age,data.gender,data.activity));
             window.location.href = "menu.html";
         }
     });
@@ -82,3 +85,13 @@ function sendUserData(){
     // window.location.href = "menu.html";
    // alert("json posted!");
 };
+
+function computeCalories(weight, height, age, gender, activity){
+    var BMR;
+    if(gender=="male"){
+       BMR = 66.5+(13.75*weight)+(5.003*height)-(6.755*age);
+    }else{
+        BMR = 655.1+(9.563*weight)+(1.850*height)-(4.676*age);
+    }
+    return activity*BMR;
+}
