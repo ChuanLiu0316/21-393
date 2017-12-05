@@ -13,7 +13,7 @@ def identity(n):
 
 nutritions = ['Calories', 'Fat', 'Carbohydrates', 'Protein'] 
 nut_multiplier = {'Carbohydrates':4.0, 'Protein':4.0, 'Fat':9.0}
-nut_lower_percentage = {'Carbohydrates': 0.45, 'Protein': 0.1, 'Fat': 0.2}
+nut_lower_percentage = {'Carbohydrates': 0.30, 'Protein': 0.1, 'Fat': 0.2}
 nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
 
 def filter_al(foods, allergies):
@@ -63,8 +63,8 @@ class Solver(object):
 
             else:
                 coeffs = [float(f[nut]) for f in foods]
-                p += lpDot(coeffs, vs) <= calorie_variable + 1.0
-                p += lpDot(coeffs, vs) >= calorie_variable + 1.0
+                p += lpDot(coeffs, vs) <= calorie_variable + 5.0
+                p += lpDot(coeffs, vs) >= calorie_variable + 5.0
         # set B/L/M constraint 
         v_f_pairs = zip(vs, foods)
         breakfasts = [v for v, f in v_f_pairs if f['Meal Time'] =='B']
