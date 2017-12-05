@@ -140,9 +140,13 @@ function showFoodDetail(food){
     $("#food_price").html(food["Price"]);
     $("#food_special").html("");
     for(var key in food){
-        if((key.indexOf("Allergy")!=-1 && food[key] == "1") || (key == "Vegetarian" && food[key] == "1")){
-            $("#food_special").html($("#food_special").html()+" " + key)
+        var idx = key.indexOf("Allergy");
+        if((idx !=-1 && food[key] == "1"){
+            $("#food_special").html($("#food_special").html() + " " + key.substring(0, idx));
+        } else if(key == "Vegetarian" && food[key] == "1"){
+            $("#food_special").html($("#food_special").html() + " " + key)
         }
+    }
     }
     $("#windows").show();
     $('#mybg').show().height( $(document).height() ).css({'opacity':0.7});
