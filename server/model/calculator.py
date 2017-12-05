@@ -26,7 +26,7 @@ def calculate(weight, height, gender, age):
 
 def calcCalorie(weight, height, gender, age, activity):
     '''
-    This algorithm uses Harris–Benedict BMR with activity level factor
+    This algorithm uses Harris-Benedict BMR with activity level factor
     to compute calories needed per day
     '''
     if gender=="male":
