@@ -33,7 +33,7 @@ def calculate():
     A = json.loads(request.data)
 
     try: 
-        S = Solver(A['height'], A['weight'], A['age'], 'male')
+        S = Solver(A['height'], A['weight'], A['age'], 'male', A['activity'], A['allergy'])
     except Exception as e:
         print e
 
