@@ -12,7 +12,7 @@ def identity(n):
     
 
 nutritions = ['Calories', 'Fat', 'Carbohydrates', 'Protein'] 
-nut_multiplier = {'Carbohydrates':4, 'Protein':4, 'Fat':9}
+nut_multiplier = {'Carbohydrates':4.0, 'Protein':4.0, 'Fat':9.0}
 nut_lower_percentage = {'Carbohydrates': 0.45, 'Protein': 0.1, 'Fat': 0.2}
 nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
 
