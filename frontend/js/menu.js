@@ -1,6 +1,6 @@
 $(document).ready(function(){
-    var data = JSON.parse(localStorage.getItem('foods'));
-    console.log(data);
+    // var data = JSON.parse(localStorage.getItem('foods'));
+    // console.log(data);
     var test_food1 = {
        Time: 0,
        Price: 1.4,
@@ -40,7 +40,7 @@ $(document).ready(function(){
        Vegetarian: "1",
        WheatAllergy: "1"
     }
-    // var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
+    var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
     showMenu(data);
     computeTotal(data);
     // button to go back to homepage
@@ -123,7 +123,7 @@ function computeTotal(data){
     row.eq(5).html(total_cost.toFixed(2));
     // fill out requirement
     var row = $("#energy tr:nth-child(2) td");
-    row.eq(1).html(localStorage.getItem("calories"));
+    //row.eq(1).html(localStorage.getItem("calories"));
 }
 
 function showFoodDetail(food){
