@@ -139,7 +139,7 @@ function showFoodDetail(food){
     $("#food_price").html(food["Price"]);
     $("#food_special").html("");
     for(var key in food){
-        if((key.indexOf("Allergy")!=-1 && food[key] == "1") || (key == "Vegetarian")){
+        if((key.indexOf("Allergy")!=-1 && food[key] == "1") || (key == "Vegetarian" && food[key] == "1")){
             $("#food_special").html($("#food_special").html()+" " + key)
         }
     }
