@@ -57,6 +57,7 @@ class Solver(object):
 
         calorie_variable = LpVariable(str('calorie'))
         p += calorie_variable >= self.nutritions['Calories']
+
         for nut in nutritions:
             if nut != 'Calories':
                 coeffs = [float(f[nut]) for f in foods]

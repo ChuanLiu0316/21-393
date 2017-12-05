@@ -35,6 +35,8 @@ class Food(object):
         for food in food_entries:
             if 'L/D' in food['Meal Time']:
                 # need break up these two.
+                food['calories'] = 4 * food['Protein'] + 4* food['Carbohydrates'] + 9*food['Fat']
+
                 L_instance = copy(food)
                 D_instance = copy(food)
                 L_instance['Meal Time'] = 'L'
@@ -42,5 +44,6 @@ class Food(object):
                 foods.append(L_instance)
                 foods.append(D_instance)
             else:
+                food['calories'] = 4 * food['Protein'] + 4* food['Carbohydrates'] + 9*food['Fat']
                 foods.append(food)   
         return foods
