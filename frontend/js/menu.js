@@ -141,7 +141,7 @@ function showFoodDetail(food){
     $("#food_special").html("");
     for(var key in food){
         var idx = key.indexOf("Allergy");
-        if((idx !=-1 && food[key] == "1"){
+        if((idx !=-1 && food[key] == "1")){
             $("#food_special").html($("#food_special").html() + " " + key.substring(0, idx));
         } else if(key == "Vegetarian" && food[key] == "1"){
             $("#food_special").html($("#food_special").html() + " " + key)
