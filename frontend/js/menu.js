@@ -148,7 +148,6 @@ function showFoodDetail(food){
             $("#food_special").html($("#food_special").html() + " " + key)
         }
     }
-    }
     $("#windows").show();
     $('#mybg').show().height( $(document).height() ).css({'opacity':0.7});
 }
