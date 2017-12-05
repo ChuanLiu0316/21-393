@@ -1,5 +1,5 @@
 from scipy.optimize import linprog
-from calculator import calculate
+from calculator import calculate, calcCalorie
 from food import Food
 from pulp import *
 
@@ -12,6 +12,10 @@ def identity(n):
     
 
 nutritions = ['Calories', 'Fat', 'Carbohydrates', 'Protein'] 
+nut_multiplier = {'Carbohydrates':4, 'Protein':4, 'Fat':9}
+nut_lower_percentage = {'Carbohydrates': 0.45, 'Protein': 0.1, 'Fat': 0.2}
+nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
+
 def filter_al(foods, allergies):
     def ok(food):
         for nut in nutritions:
@@ -25,42 +29,15 @@ def filter_al(foods, allergies):
 
 class Solver(object):
 
-    def __init__(self, height, weight, age, gender):
+    def __init__(self, height, weight, age, gender, activity, allergy):
         print "in init"
-        (calorie, protein, fat, carb) = calculate(weight, height, gender, age)
-        self.cal = float(calorie)
-        self.pro = float(protein)
-        self.fat = float(fat)
-        self.carb = float(carb)
-        print (calorie, protein, fat, carb)
+        calorie = calcCalorie(weight, height, gender, age, activity)
 
+        print calorie
         self.nutritions = {
             'Calories':float(calorie),
-            'Fat':float(fat),
-            'Carbohydrates': float(carb),
-            'Protein': float(protein),
         }
-
-    def run(self):
-        # GET foods first
-        foods = Food.batch_create_by_csv('data.csv')
-        foods = filter_al(foods, [])
-
-        # nutrition 
-        coeffs = [[-float(food[nut]) for food in foods] for nut in nutritions]
-
-        B = [-self.cal, -self.fat, -self.carb, -self.pro]
-
-        # meal number constraint 5 meals B/L/D
-
-        # Objective, minimize price
-        C = [food['Price'] for food in foods]
-
-        result = linprog(c=C, A_ub = coeffs, b_ub = B)
-
-        print result
-
-
+        self.allergies = allergy
 
     def run_2(self):
         # GET foods first
@@ -77,9 +54,14 @@ class Solver(object):
         vs = [LpVariable(str(i), 0, cat='Integer') for i, food in enumerate(foods)]
 
         # set nutrition constraint
+
+        calorie_variable = LpVariable(str('calorie'))
+        p += calorie_variable >= self.nutritions['Calories']
         for nut in nutritions:
-            coeffs = [float(f[nut]) for f in foods]
-            p += lpDot(coeffs, vs) >= self.nutritions[nut]
+            if nut != 'Calories':
+                coeffs = [float(f[nut]) for f in foods]
+                p += nut_multiplier[nut]*lpDot(coeffs, vs) <= calorie_variable * nut_higher_percentage[nut]
+                p += nut_multiplier[nut]*lpDot(coeffs, vs) >= calorie_variable * nut_lower_percentage[nut]
 
         # set B/L/M constraint 
         v_f_pairs = zip(vs, foods)
@@ -108,7 +90,6 @@ class Solver(object):
         p += lpDot([float(food['Price']) for food in foods],vs)
 
         self.result = p.solve()
-        print "alskdjalksdjasdlkajsd"
         print self.result
         self.p = p
         self.variables = [v.value() for v in vs]
@@ -143,3 +124,22 @@ class Solver(object):
         }
               
         return 
+
+    # def run(self):
+    #     # GET foods first
+    #     foods = Food.batch_create_by_csv('data.csv')
+    #     foods = filter_al(foods, [])
+
+    #     # nutrition 
+    #     coeffs = [[-float(food[nut]) for food in foods] for nut in nutritions]
+
+    #     B = [-self.cal, -self.fat, -self.carb, -self.pro]
+
+    #     # meal number constraint 5 meals B/L/D
+
+    #     # Objective, minimize price
+    #     C = [food['Price'] for food in foods]
+
+    #     result = linprog(c=C, A_ub = coeffs, b_ub = B)
+
+    #     print result

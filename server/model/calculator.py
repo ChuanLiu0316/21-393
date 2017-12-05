@@ -33,4 +33,4 @@ def calcCalorie(weight, height, gender, age, activity):
         BMR = 66.5+(13.75*weight)+(5.003*height)-(6.755*age)
     else:
         BMR = 655.1+(9.563*weight)+(1.850*height)-(4.676*age)
-    return activity*BMR
+    return 5.0*activity*BMR
