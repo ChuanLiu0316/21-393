@@ -137,7 +137,7 @@ function showFoodDetail(food){
     $("#food_calorie").html(food["Calories"]);
     $("#food_carb").html(food["Carbohydrates"]);
     $("#food_price").html(food["Price"]);
-    $("#food_special").html();
+    $("#food_special").html("");
     for(var key in food){
         if((key.indexOf("Allergy")!=-1 && food[key] == "1") || (key == "Vegetarian")){
             $("#food_special").html($("#food_special").html()+" " + key)
