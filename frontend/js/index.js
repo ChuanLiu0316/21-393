@@ -72,8 +72,8 @@ function sendUserData(){
             console.log(typeof foods)
             localStorage.setItem("foods", JSON.stringify(foods));
             localStorage.setItem("calories",
-                computeCalories(data.weight,
-                    data.height, data.age,data.gender,data.activity));
+                Math.round(5*computeCalories(data.weight,
+                    data.height, data.age,data.gender,data.activity)));
             window.location.href = "menu.html";
         }
     });

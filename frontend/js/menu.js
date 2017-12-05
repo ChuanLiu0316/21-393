@@ -117,9 +117,9 @@ function computeTotal(data){
     //menu tds
     var row = $("#energy tr:nth-child(1) td");
     row.eq(1).html(total_calories );
-    row.eq(2).html(total_protein + "(" + Math.round(total_protein*400/total_calories) + "%)");
-    row.eq(3).html(total_fat + "(" + Math.round(total_fat*900/total_calories) + "%)");
-    row.eq(4).html(total_carb + "(" + Math.round(total_carb*400/total_calories) + "%)");
+    row.eq(2).html(total_protein + " (" + Math.round(total_protein*400/total_calories) + "%)");
+    row.eq(3).html(total_fat + " (" + Math.round(total_fat*900/total_calories) + "%)");
+    row.eq(4).html(total_carb + " (" + Math.round(total_carb*400/total_calories) + "%)");
     row.eq(5).html(total_cost.toFixed(2));
     // fill out requirement
     var row = $("#energy tr:nth-child(2) td");
