@@ -13,15 +13,25 @@ def identity(n):
 
 nutritions = ['Calories', 'Fat', 'Carbohydrates', 'Protein'] 
 nut_multiplier = {'Carbohydrates':4.0, 'Protein':4.0, 'Fat':9.0}
-nut_lower_percentage = {'Carbohydrates': 0.45, 'Protein': 0.1, 'Fat': 0.2}
+nut_lower_percentage = {'Carbohydrates': 0.30, 'Protein': 0.1, 'Fat': 0.2}
 nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
 
 def filter_al(foods, allergies):
+    #print "filter "
     def ok(food):
         if not food['Price']:
             return False
-        return True
 
+        for allergy in allergies:
+            #print allergy
+            if allergy == 'Vegetarian':
+                print food[allergy]
+                if not food[allergy] or int(food[allergy]) == 0:
+                    return False
+            else:
+                if food[allergy] and int(food[allergy]) == 1:
+                    return False
+        return True
     return [food for food in foods if ok(food)]
 
 class Solver(object):
@@ -35,12 +45,13 @@ class Solver(object):
             'Calories':float(calorie),
         }
         self.allergies = allergy
-
+        print allergy
     def run_2(self):
         # GET foods first
         try:
             foods = Food.batch_create_by_csv('data.csv')
-            foods = filter_al(foods, [])
+            print "after reading from csv"
+            foods = filter_al(foods, self.allergies)
         except Exception as e:
             print e
 
@@ -61,6 +72,10 @@ class Solver(object):
                 p += nut_multiplier[nut]*lpDot(coeffs, vs) <= calorie_variable * nut_higher_percentage[nut]
                 p += nut_multiplier[nut]*lpDot(coeffs, vs) >= calorie_variable * nut_lower_percentage[nut]
 
+            else:
+                coeffs = [float(f[nut]) for f in foods]
+                p += lpDot(coeffs, vs) <= calorie_variable + 5.0
+                p += lpDot(coeffs, vs) >= calorie_variable + 5.0
         # set B/L/M constraint 
         v_f_pairs = zip(vs, foods)
         breakfasts = [v for v, f in v_f_pairs if f['Meal Time'] =='B']

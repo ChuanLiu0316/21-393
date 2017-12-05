@@ -39,7 +39,10 @@ def calculate():
 
     print "ok here2"
     S.run_2()
-    return json.dumps(S.need_food)
+    if S.result == -1:
+        return json.dumps([])
+    else:
+        return json.dumps(S.need_food)
 	#return None	
 
 	#return json.dumps(place_holder_response)
