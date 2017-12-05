@@ -2,7 +2,8 @@ $(document).ready(function(){
     var data = JSON.parse(localStorage.getItem('foods'));
     console.log(data);
     if(data.length == 0){
-        // no
+        //
+        $(".info").text("       Sorry. Our algorithm couldn't find a suitable menu for you based on current assumptions. ");
     }
     var test_food1 = {
        Time: 0,
