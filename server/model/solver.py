@@ -12,15 +12,12 @@ def identity(n):
     
 
 nutritions = ['Calories', 'Fat', 'Carbohydrates', 'Protein'] 
-nut_multiplier = {'Carbohydrates':4, 'Protein':4, 'Fat':9}
+nut_multiplier = {'Carbohydrates':4.0, 'Protein':4.0, 'Fat':9.0}
 nut_lower_percentage = {'Carbohydrates': 0.45, 'Protein': 0.1, 'Fat': 0.2}
 nut_higher_percentage = {'Carbohydrates': 0.6, 'Protein': 0.35, 'Fat': 0.35}
 
 def filter_al(foods, allergies):
     def ok(food):
-        for nut in nutritions:
-            if not food[nut].isdigit():
-                return False
         if not food['Price']:
             return False
         return True
@@ -57,6 +54,7 @@ class Solver(object):
 
         calorie_variable = LpVariable(str('calorie'))
         p += calorie_variable >= self.nutritions['Calories']
+
         for nut in nutritions:
             if nut != 'Calories':
                 coeffs = [float(f[nut]) for f in foods]

@@ -1,17 +1,17 @@
 Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
-Breakfast Quesadilla,5.75,underground,B,530,32,35,25,1,1,1,1,0,0,0,0,
-Breakfast Sandwich Bagel,4.5,underground,B,520,16,65,29,0,1,1,1,0,0,0,0,
-3 Egg Omelette,4.5,underground,B,640,51,16,26,1,1,1,1,0,0,0,0,
-French Toast,4.5,underground,B,880,38,116,22,1,1,1,1,0,0,0,0,
-Breakfast Meshugna,6.25,underground,B,450,24,36,23,1,1,1,1,0,0,0,1,
-PB Banana Crunch,4.5,underground,B,790,33,114,22,1,1,0,1,0,0,0,1,
-Plain Bagel,1.25,underground,B,300,1,64,10,1,0,0,1,0,1,0,0,
-Yogurt Parpait,3.25,underground,B,340,4,67,12,1,1,0,1,0,0,0,0,
-Artichoke Melt,6.25,underground,L/D,780,34,93,34,1,1,0,1,0,0,1,0,
-Bayou Tilapia,7.25,underground,L/D,990,61,70,43,0,1,1,1,1,0,0,1,
-Black Bean Quinoa Burger,6,underground,L/D,330,7,56,12,1,1,1,1,0,1,0,1,
-Cheeseburger,6.5,underground,L/D,540,27,33,38,0,1,1,1,0,0,0,0,
-Cheese steak,6.5,underground,L/D,670,45,39,32,0,1,0,1,0,0,0,0,
+Breakfast Quesadilla,5.75,underground,B,530,32,35,25,1,1,1,1,0,0,0,0,0
+Breakfast Sandwich Bagel,4.5,underground,B,520,16,65,29,0,1,1,1,0,0,0,0,0
+3 Egg Omelette,4.5,underground,B,640,51,16,26,1,1,1,1,0,0,0,0,0
+French Toast,4.5,underground,B,880,38,116,22,1,1,1,1,0,0,0,0,0
+Breakfast Meshugna,6.25,underground,B,450,24,36,23,1,1,1,1,0,0,0,1,0
+PB Banana Crunch,4.5,underground,B,790,33,114,22,1,1,0,1,0,0,0,1,0
+Plain Bagel,1.25,underground,B,300,1,64,10,1,0,0,1,0,1,0,0,0
+Yogurt Parpait,3.25,underground,B,340,4,67,12,1,1,0,1,0,0,0,0,0
+Artichoke Melt,6.25,underground,L/D,780,34,93,34,1,1,0,1,0,0,1,0,0
+Bayou Tilapia,7.25,underground,L/D,990,61,70,43,0,1,1,1,1,0,0,1,0
+Black Bean Quinoa Burger,6,underground,L/D,330,7,56,12,1,1,1,1,0,1,0,1,0
+Cheeseburger,6.5,underground,L/D,540,27,33,38,0,1,1,1,0,0,0,0,0
+Cheese steak,6.5,underground,L/D,670,45,39,32,0,1,0,1,0,0,0,0,0
 Baked Chicken and Pierogies,6.95,Exchange,L,570,32,23,43,0,1,1,1,0,0,0,1,0
 Beef Stroganoff,6.95,Exchange,L,370,13,28,33,0,1,1,1,0,1,0,0,0
 Build A Burger,6.95,Exchange,L,580,32,22,48,0,0,0,1,0,0,0,1,0
@@ -36,44 +36,40 @@ Jamaican Chicken Wrap,7.25,underground,L/D,690,10,74,49,1,0,0,0,0,0,0,0,0
 Sliced Ham Deli Sandwich,6,underground,L/D,280,11,34,13,0,1,0,1,0,1,0,0,0
 Reuben,6.25,underground,L/D,530,28,38,28,0,1,0,1,0,0,0,0,0
 Sliced Turkey Deli Sandwich,6,underground,L/D,370,12,38,30,0,1,0,1,0,1,0,0,0
-Philly Cheese Steak with Beef ,,CM Cafe,L/D,750,41,46,46,0,0,0,1,0,0,0,0,0
+Philly Cheese Steak with Beef ,7.99,CM Cafe,L/D,750,41,46,46,0,0,0,1,0,0,0,0,0
 Popcorn Shrimp Basket,7.99,CM Cafe,L/D,310,2.5,47,23,0,0,1,1,1,0,0,0,
 Sweet and Spicy Chicken and Waffles ,7.99,CM Cafe,L/D,860,46,99,20,0,1,1,1,0,0,0,1,
 BBQ Wings ,8.29,CM Cafe,L/D,1000,60,56,57,0,0,0,0,0,0,0,0,
 Bacon Breakfast Sandwith,,Zebra Lounge,B,590,35,41,23,0,1,1,1,0,0,0,0,
 PB Banana Crunch,,Zebra Lounge,B,780,39,97,23,1,1,0,1,0,0,0,1,1
 Sausage Breakfast Sandwich,,Zebra Lounge,B,600,34,42,28,0,1,1,1,0,0,0,0,0
-Chicken Caesar Wrap,,Zebra Lounge,L,730,42,51,36,0,0,1,1,1,,,1,
-Roast Beef Sandwich base,,Zebra Lounge,,130,3,2,22,0,0,0,0,0,,,0,
-Southwest Wrap,,Zebra Lounge,,980,68,55,40,0,1,1,1,0,,,0,
-Turkey Sandwich base,,Zebra Lounge,,100,1,6,18,0,0,0,0,0,,,0,
-Veggie Wrap,,Zebra Lounge,,440,21,57,13,1,0,0,1,0,,,0,
-Italian Sub,,Zebra Lounge,,580,32,48,31,0,1,0,1,0,,,0,
+Chicken Caesar Wrap,,Zebra Lounge,B/L/D,730,42,51,36,0,0,1,1,1,,,1,
+Southwest Wrap,,Zebra Lounge,B/L/D,980,68,55,40,0,1,1,1,0,,,0,
+Veggie Wrap,,Zebra Lounge,B/L/D,440,21,57,13,1,0,0,1,0,,,0,
+Italian Sub,,Zebra Lounge,B/L/D,580,32,48,31,0,1,0,1,0,,,0,
 Tuna Salad Deli Sandwich ,6,underground,L/D,410,18,34,29,0,1,1,0,1,1,0,1,0
-5th Ave Grilled Cheese,5.5,City Grill,L/D,600,43,26,29,1,1,0,1,0,0,0,0,
-BBQ Burger,,City Grill,L/D,840,45,67,42,0,1,1,1,0,0,0,1,
-Big City Burger,6.15,City Grill,L/D,600,36,45,37,0,1,0,1,0,0,0,0,
-Buffalo CHicken Sandwich,,City Grill,L/D,810,47,43,55,0,1,1,1,0,0,0,1,
-California Chicken Club,7.5,City Grill,L/D,740,43,37,53,0,1,1,1,0,0,0,0,
-City Slicker Crispy Chicken Sandwich,,City Grill,L/D,760,36,69,39,0,1,1,1,0,0,0,0,
-City Slicker Grilled Chicken Sandwich,,City Grill,L/D,380,7,43,37,0,0,0,1,0,1,0,0,
-Fifth Ave Grilled Cheese,,City Grill,L/D,330,26,1,22,0,1,0,1,0,0,0,0,
-Grilled Cheeseburger,,City Grill,L/D,740,43,45,42,0,1,0,1,0,0,0,0,
-Philly Cheese Steak with Beef,7.5,City Grill,L/D,750,41,46,46,0,1,0,1,0,0,0,0,
-Hot Sausage Sandwich,,City Grill,L/D,500,22,49,12,0,1,0,1,0,0,0,0,
-Belgian Waffle,5.09,CM Cafe,B,260,3,58,,,,,,,,,,
-Belgian Waffle with Berries and Cream,6.29,CM Cafe,B,500,15,85,,,,,,,,,,
-Buttermilk Pancakes,4.49,CM Cafe,B,660,8,145,,,,,,,,,,
-Cafe French Toast,4.49,CM Cafe,B,430,13,63,,,,,,,,,,
-Chicken and Egg Biscuit,5.99,CM Cafe,B,630,41,37,,,,,,,,,,
-Chocolate Chip Pancakes,5.28,CM Cafe,B,930,25,181,,,,,,,,,,
-Egg White Omelet with Cheese,6.59,CM Cafe,B,230,12,6,,,,,,,,,,
-Egg White for Omelet ,,CM Cafe,B,90,0,2,,,,,,,,,,
-Egg for Omelet,,CM Cafe,B,260,17,2,,,,,,,,,,
-McCann's steel Cut Oatmeal,3.59,CM Cafe,B,530,9,96,,,,,,,,,,
-Signature Breakfast Burrito (without meat),7.09,CM Cafe,B,710,30,,,,,,,,,,,
-Steak and Eggs,9.99,CM Cafe,B,590,41,,,,,,,,,,,
-The Breakfast Bomber (no meat),7.09,CM Cafe,B,800,40,,,,,,,,,,,
+5th Ave Grilled Cheese,5.5,City Grill,L/D,600,43,26,29,1,1,0,1,0,0,0,0,0
+BBQ Burger,6.15,City Grill,L/D,840,45,67,42,0,1,1,1,0,0,0,1,0
+Big City Burger,6.15,City Grill,L/D,600,36,45,37,0,1,0,1,0,0,0,0,0
+Buffalo CHicken Sandwich,6.5,City Grill,L/D,810,47,43,55,0,1,1,1,0,0,0,1,0
+California Chicken Club,7.5,City Grill,L/D,740,43,37,53,0,1,1,1,0,0,0,0,0
+City Slicker Crispy Chicken Sandwich,6.5,City Grill,L/D,760,36,69,39,0,1,1,1,0,0,0,0,0
+City Slicker Grilled Chicken Sandwich,6.5,City Grill,L/D,380,7,43,37,0,0,0,1,0,1,0,0,0
+Fifth Ave Grilled Cheese,5.5,City Grill,L/D,330,26,1,22,0,1,0,1,0,0,0,0,0
+Grilled Cheeseburger,6.15,City Grill,L/D,740,43,45,42,0,1,0,1,0,0,0,0,0
+Philly Cheese Steak with Beef,7.5,City Grill,L/D,750,41,46,46,0,1,0,1,0,0,0,0,0
+Hot Sausage Sandwich,6.15,City Grill,L/D,500,22,49,12,0,1,0,1,0,0,0,0,0
+Belgian Waffle,5.09,CM Cafe,B,260,3,58,7,1,1,1,1,0,0,0,0,0
+Belgian Waffle with Berries and Cream,6.29,CM Cafe,B,500,15,85,7,1,1,1,1,0,1,0,0,0
+Buttermilk Pancakes,4.49,CM Cafe,B,660,8,145,18,0,1,1,0,0,0,0,1,0
+Cafe French Toast,4.49,CM Cafe,B,430,13,63,16,1,1,1,1,0,0,0,0,0
+Chicken and Egg Biscuit,5.99,CM Cafe,B,630,41,37,27,0,1,1,1,0,0,0,1,0
+Chocolate Chip Pancakes,5.28,CM Cafe,B,930,25,181,20,1,1,1,1,0,0,0,1,0
+Egg White Omelet with Cheese,6.59,CM Cafe,B,230,12,6,24,0,1,1,0,0,1,0,0,0
+McCann's steel Cut Oatmeal,3.59,CM Cafe,B,530,9,96,14,1,0,0,1,0,0,0,0,0
+Signature Breakfast Burrito (without meat),7.09,CM Cafe,B,710,30,87,23,1,1,1,1,0,0,0,0,0
+Steak and Eggs,9.99,CM Cafe,B,590,41,3,47,0,0,1,1,0,0,0,0,0
+The Breakfast Bomber (no meat),7.09,CM Cafe,B,800,40,77,32,0,1,1,1,0,0,0,0,0
 Alu Baingan,9.5,Taste of India,D,360,3,84,12,1,0,0,0,0,1,0,0,0
 Alu Carrot,9.5,Taste of India,D,270,0,66,6,1,0,0,0,0,1,0,0,0
 Alu Ghobi,9.5,Taste of India,D,240,0,54,9,1,0,0,0,0,1,0,0,0
@@ -109,16 +105,12 @@ Palak Paneer,7.25,Taste of India,L,510,33,36,18,1,1,0,0,0,1,0,0,0
 Peas Pilav,7.25,Taste of India,L,450,15,96,9,1,0,0,0,0,1,0,1,0
 Tandoori Chicken,7.25,Taste of India,L,600,21,12,78,0,1,0,0,0,0,0,0,0
 Banana,1,Entropy,B/L/D,105,0.4,27,1.3,1,0,0,0,0,1,0,0,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,Treenut,SoyAllergy,PeanutAllery
 Apple,1,Entropy,B/L/D,95,0.3,25,0.5,1,0,0,0,0,1,0,0,0
 Orange,1,Entropy,B/L/D,90,0,21.6,1.7,1,0,0,0,0,1,0,0,0
 Fruitcup(small),2.49,ABP,B/L/D,70,0,18,1,1,0,0,0,0,1,0,0,0
 Fruitcup(large),3.49,ABP,B/L/D,140,0,36,2,1,0,0,0,0,1,0,0,0
 Asian Chicken Salad,8.99,Spinning Salad,L/D,420,22,29,23,0,0,0,1,0,1,0,0,0
 Chino Chopped Vegetable Salad,8.99,Spinning Salad,L/D,460,45,14,3,1,1,0,0,0,1,0,0,0
-,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,Treenut,SoyAllergy,PeanutAllery
 Balsamic Chicken Stack,7.29,Maggie Murph Cafe,L/D,330,12,9,43,0,1,0,0,0,0,0,0,0
 Buffalo Breaded Chicken,7.29,Maggie Murph Cafe,L/D,730,24,70,56,0,1,0,1,0,0,0,0,0
 California Chicken Club,7.29,Maggie Murph Cafe,L/D,740,43,37,53,0,1,1,1,0,0,0,0,0
@@ -139,7 +131,6 @@ Vegetable Barley Soup,3.69,Maggie Murph Cafe,L/D,60,0.5,12,2,1,0,0,1,0,1,0,1,0
 Vegetable Lentil Soup,3.69,Maggie Murph Cafe,L/D,310,2.5,56,19,1,0,0,0,0,1,0,1,0
 Vegetable Split Pea Soup,3.69,Maggie Murph Cafe,L/D,110,1,19,6,1,0,0,0,0,1,0,1,0
 Winter Beef Noodle Soup,3.69,Maggie Murph Cafe,L/D,60,1.5,7,5,0,0,0,1,1,1,0,1,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
 Portobello Burger,8.99,EVGEFSTOS,L/D,360,4.5,67,12,1,0,0,1,0,1,0,0,0
 Smashed White Bean and Avocado Wrap,8.99,EVGEFSTOS,L/D,460,13,74,18,1,0,0,1,0,1,0,0,0
 The PB&J,8.99,EVGEFSTOS,L/D,620,34,70,18,1,0,0,1,0,0,0,0,0
@@ -159,7 +150,6 @@ Fruit Salad,2.15,EVGEFSTOS,L/D,70,0,17,1,1,,0,0,0,1,0,0,0
 Grape Leaves,2.15,EVGEFSTOS,L/D,110,2.5,21,7,1,1,1,1,0,1,0,0,0
 Greek Orzo Salad,2.15,EVGEFSTOS,L/D,410,27,32,11,1,1,0,1,0,1,0,0,0
 Haluski,2.15,EVGEFSTOS,L/D,290,11,39,7,1,1,1,1,0,0,0,0,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
 Hauliski,2.15,EVGEFSTOS,L/D,210,18,9,3,0,1,1,1,0,1,0,0,0
 Mediterranean Barley Salad,2.15,EVGEFSTOS,L/D,440,7,84,16,1,0,0,1,0,1,0,0,0
 Mediterranean Tomato and Grain Salad,2.15,EVGEFSTOS,L/D,190,11,20,5,1,1,0,1,0,1,0,0,0
@@ -169,37 +159,32 @@ Southwest Bean Salad,2.15,EVGEFSTOS,L/D,160,1,34,7,1,0,0,0,0,1,0,0,0
 Southwest Bean Salad with Rice and Corn,2.15,EVGEFSTOS,L/D,160,1,34,5,1,0,0,0,0,1,0,0,0
 Spelt Salad,2.15,EVGEFSTOS,L/D,230,13,26,230,1,0,0,1,0,1,0,0,0
 Spicy Pasta Salad,2.15,EVGEFSTOS,L/D,250,10,19,9,1,1,1,1,0,0,0,0,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
 Tabouli,2.15,EVGEFSTOS,L/D,110,4.5,16,2,1,1,0,1,0,1,0,0,0
 Tomato and Mozzarella Salad,2.15,EVGEFSTOS,L/D,200,17,2,10,1,1,0,0,0,1,0,0,0
 Falefel,2.15,EVGEFSTOS,L/D,320,5,54,18,0,0,0,0,0,0,0,0,0
 Macaroni Salad,2.15,EVGEFSTOS,L/D,150,15,4,1,1,0,1,1,0,1,0,1,0
 Roasted Vegetable,2.15,EVGEFSTOS,L/D,20,1.5,3,1,1,0,0,0,0,1,0,0,0
 Quinoa and Sweet Potato Salad,2.15,EVGEFSTOS,L/D,260,10,38,7,1,0,0,0,0,1,0,0,0
-Apple Dumpling,,Tazza D' Oro,B,570,23,87,6,1,1,0,1,0,0,0,0,0
-Asiago Cheese Bagle,,Tazza D' Oro,B,380,6,68,18,0,1,0,1,0,0,0,1,0
-Blueberry Muffin,,Tazza D' Oro,B,440,21,57,5,0,1,1,1,0,0,0,0,0
-Chocolate Chunk Brownie,,Tazza D' Oro,B,310,18,37,4,0,1,1,1,0,0,0,1,0
-Cranberry Scone,,Tazza D' Oro,B,500,23,71,5,1,1,1,1,0,0,0,0,0
-Large Chocolate Chip Cookie,,Tazza D' Oro,B,580,31,73,6,1,1,1,1,0,0,0,1,0
-Raisin Scone ,,Tazza D' Oro,B,570,24,93,10,1,1,1,1,0,0,0,0,0
-Sfogliatelle,,Tazza D' Oro,B,180,7,25,5,0,1,1,1,0,0,0,1,0
-Small Chocolate Chip Cookie,,Tazza D' Oro,B,180,9,26,2,1,1,1,1,0,0,0,1,0
-Supergrain Bagel,,Tazza D' Oro,B,400,10,62,12,0,0,0,1,0,0,0,1,0
-Triple Berry Apple Tart,,Tazza D' Oro,B,470,23,63,4,0,1,1,1,0,0,0,0,0
-Ham Croissant,,Tazza D' Oro,,,,,,,,,,,,,,
-Spinach Croissant,,Tazza D' Oro,,,,,,,,,,,,,,
-Bacon Croissant,,Tazza D' Oro,,,,,,,,,,,,,,
-Grilled Cheese,,Tazza D' Oro,,,,,,,,,,,,,,
-Prosciutto Panini,,Tazza D' Oro,,,,,,,,,,,,,,
-Mushroom Flatbread,,Tazza D' Oro,,,,,,,,,,,,,,
-Chicken Panini,,Tazza D' Oro,,,,,,,,,,,,,,
-Caesar Salad,,Tazza D' Oro,,,,,,,,,,,,,,
-Quinoa Bowl,,Tazza D' Oro,,,,,,,,,,,,,,
-Fall Farro Salad,,Tazza D' Oro,,,,,,,,,,,,,,
-Bean Salad,,Tazza D' Oro,,,,,,,,,,,,,,
-Potato Salad,,Tazza D' Oro,,,,,,,,,,,,,,
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
+Apple Dumpling,4.85,Tazza D' Oro,B,570,23,87,6,1,1,0,1,0,0,0,0,0
+Asiago Cheese Bagle,1.39,Au bon pain,B/L/D,300,6,68,18,0,1,0,1,0,0,0,1,0
+Blueberry Muffin,2.25,Tazza D' Oro,B,440,21,57,5,0,1,1,1,0,0,0,0,0
+Chocolate Chunk Brownie,1.75,Zebra Lounge,B,310,18,37,4,0,1,1,1,0,0,0,1,0
+Cranberry Scone,2.5,Zebra Lounge,B,500,23,71,5,1,1,1,1,0,0,0,0,0
+Raisin Scone ,2.5,Zebra Lounge,B,570,24,93,10,1,1,1,1,0,0,0,0,0
+Supergrain Bagel,2.5,Zebra Lounge,B,400,10,62,12,0,0,0,1,0,0,0,1,0
+Triple Berry Apple Tart,4.85,Tazza D' Oro,B,470,23,63,4,0,1,1,1,0,0,0,0,0
+Ham Croissant,6.5,Tazza D' Oro,B/L/D,350,18,34,14,0,1,0,1,0,0,0,0,0
+Spinach Croissant,6.5,Tazza D' Oro,B/L/D,360,18,40,10,1,1,0,1,0,0,0,0,0
+Bacon Croissant,6.75,Tazza D' Oro,B/L/D,413,24,28,16,0,1,0,1,0,0,0,0,0
+Grilled Cheese,8.95,Tazza D' Oro,L/D,873,45,84,27,1,1,0,1,0,0,0,0,0
+Prosciutto Panini,9.5,Tazza D' Oro,L/D,347,13,38,20,0,0,0,0,0,0,0,0,0
+Mushroom Flatbread,9.75,Tazza D' Oro,L/D,600,32,46,30,0,1,0,1,0,0,0,0,0
+Chicken Panini,9.75,Tazza D' Oro,L/D,255,5,20,37,0,1,0,1,0,0,0,0,0
+Caesar Salad,9.5,Tazza D' Oro,L/D,608,29,42,30,0,1,0,0,0,0,0,1,0
+Quinoa Bowl,9.5,Tazza D' Oro,L/D,470,20,60,18,1,0,0,0,0,0,0,0,0
+Fall Farro Salad,3.75,Tazza D' Oro,L/D,470,19,56,22,0,1,0,0,0,0,0,1,0
+Bean Salad,3.75,Tazza D' Oro,L/D,185,8,27,8,1,1,0,0,0,0,0,1,0
+Potato Salad,3.25,Tazza D' Oro,L/D,211,18,12,2,1,1,1,0,0,0,0,1,0
 Chicken Caesar Salad ,,Zebra Lounge,L/D,470,18,28,49,0,1,0,1,9,1,0,0,0
 Spinach Salad,,Zebra Lounge,L/D,410,20,44,16,1,1,0,0,0,1,1,0,0
 Boston Clam Chowder Soup Large,,Zebra Lounge,L/D,380,18,42,12,0,1,0,0,1,1,0,1,0
@@ -234,33 +219,27 @@ Ultimate Baked Potato Soup Large,,Zebra Lounge,L/D,530,25,63,14,0,1,0,1,0,0,0,1,
 Ultimate baked Potato Soup Small,,Zebra Lounge,L/D,360,17,43,9,0,1,0,1,0,0,0,1,0
 Vegatable Beef Barley Soup Large,,Zebra Lounge,L/D,290,3.5,46,15,0,0,0,1,0,1,0,1,0
 Vegetable Beef Barley Soup Small,,Zebra Lounge,L/D,180,2,29,10,0,0,0,1,0,1,0,1,0
-Cantaloupe Fruit Cup,,Quik Piks,L/D,100,0.5,23,2,1,0,0,0,0,1,0,0,0
-Grapes Fruit Cup,,Quik Piks,L/D,200,0,51,2,1,0,0,0,0,1,0,0,0
-Hard Cooked Egg,,Quik Piks,L/D,70,4.5,1,6,1,0,1,0,0,0,0,0,0
-Honeydew Fruit Cup,,Quik Piks,L/D,100,0,26,2,1,0,0,0,0,1,0,0,0
-MTO Chicken Salad,,Quik Piks,L/D,680,57,3,35,0,0,1,0,0,0,0,1,0
-MTO Tuna Salad,,Quik Piks,L/D,380,20,5,41,0,0,1,0,1,1,0,0,0
-Pineapple Fruit Cup,,Quik Piks,L/D,140,0,37,2,1,0,0,0,0,1,0,1,0
-Watermelon Fruit Cup,,Quik Piks,L/D,90,0,21,2,1,0,0,0,0,1,0,0,0
-Buffalo Chicken Snack Pack,,Quik Piks,L/D,690,53,36,22,0,1,1,1,0,0,0,0,0
-Cage Free Boiled Eggs,,Quik Piks,L/D,140,9,2,12,1,0,1,1,0,0,0,1,0
-Crudite Snack Pack ,,Quik Piks,L/D,240,19,17,3,0,1,0,0,0,1,0,1,0
-Strawberry and Yogurt Parfait,,Quik Piks,L/D,580,11,111,16,1,1,0,1,0,0,1,1,1
-Sweet Thai Chili Chicken Snack Pack,,Quik Piks,L/D,510,16,71,20,0,0,1,1,0,0,0,1,0
-Apple Pie Slice,,Quik Piks,B/L/D,280,11,44,2,1,1,1,1,0,0,0,0,0
-Chocolate Chip Cookie,,Quik Piks,B/L/D,210,10,29,3,0,1,1,1,0,0,1,1,0
-Chocolate Pudding Parfait,,Quik Piks,B/L/D,440,15,65,4,0,1,0,0,0,0,0,1,0
-Cinnamon Danish,,Quik Piks,B/L/D,570,32,63,10,0,1,1,1,0,0,0,1,0
-Low Fat Blueberry Muffing,,Quik Piks,B/L/D,180,3,36,3,1,1,1,1,0,0,0,1,0
-Crispy Treat,,Quik Piks,B/L/D,320,8,61,3,1,1,0,0,0,0,0,0,0
-Tartan Cookie,,Quik Piks,B/L/D,390,26,34,6,0,1,1,1,0,0,1,1,1
-Vanilla Pudding Parfait,,Quik Piks,B/L/D,400,17,57,2,0,1,0,0,0,0,0,1,0
-Firecracker Chicken Salad,,Quik Piks,L/D,250,20,12,6,0,1,1,1,0,1,0,1,0
-Pasta Salad,,Quik Piks,L/D,340,4,69,11,1,0,0,1,0,1,0,0,0
-Chicken Caesar Salad ,,Quik Piks,L/D,530,24,28,51,0,1,1,1,1,0,0,1,0
-Glazed Tuna and Avocado Salad ,,Quik Piks,L/D,500,27,42,26,0,0,0,1,0,1,0,1,0
+Cantaloupe Fruit Cup,3.59,Quik Piks,L/D,100,0.5,23,2,1,0,0,0,0,1,0,0,0
+Grapes Fruit Cup,3.59,Quik Piks,L/D,200,0,51,2,1,0,0,0,0,1,0,0,0
+Hard Cooked Egg,1.69,Quik Piks,L/D,70,4.5,1,6,1,0,1,0,0,0,0,0,0
+Honeydew Fruit Cup,3.59,Quik Piks,L/D,100,0,26,2,1,0,0,0,0,1,0,0,0
+MTO Chicken Salad,4.09,Quik Piks,L/D,680,57,3,35,0,0,1,0,0,0,0,1,0
+MTO Tuna Salad,4.09,Quik Piks,L/D,380,20,5,41,0,0,1,0,1,1,0,0,0
+Pineapple Fruit Cup,3.59,Quik Piks,L/D,140,0,37,2,1,0,0,0,0,1,0,1,0
+Watermelon Fruit Cup,3.59,Quik Piks,L/D,90,0,21,2,1,0,0,0,0,1,0,0,0
+Strawberry and Yogurt Parfait,4.09,Quik Piks,L/D,580,11,111,16,1,1,0,1,0,0,1,1,1
+Apple Pie Slice,2.99,Quik Piks,B/L/D,280,11,44,2,1,1,1,1,0,0,0,0,0
+Chocolate Chip Cookie,3.29,Quik Piks,B/L/D,210,10,29,3,0,1,1,1,0,0,1,1,0
+Chocolate Pudding Parfait,4.09,Quik Piks,B/L/D,440,15,65,4,0,1,0,0,0,0,0,1,0
+Cinnamon Danish,1.99,Quik Piks,B/L/D,570,32,63,10,0,1,1,1,0,0,0,1,0
+Low Fat Blueberry Muffin,1.99,Quik Piks,B/L/D,180,3,36,3,1,1,1,1,0,0,0,1,0
+Tartan Cookie,3.29,Quik Piks,B/L/D,390,26,34,6,0,1,1,1,0,0,1,1,1
+Vanilla Pudding Parfait,4.09,Quik Piks,B/L/D,400,17,57,2,0,1,0,0,0,0,0,1,0
+Firecracker Chicken Salad,6.99,Quik Piks,L/D,250,20,12,6,0,1,1,1,0,1,0,1,0
+Pasta Salad,4.09,Quik Piks,L/D,340,4,69,11,1,0,0,1,0,1,0,0,0
+Chicken Caesar Salad ,6.99,Quik Piks,L/D,530,24,28,51,0,1,1,1,1,0,0,1,0
+Glazed Tuna and Avocado Salad ,6.99,Quik Piks,L/D,500,27,42,26,0,0,0,1,0,1,0,1,0
 Side Salad,2.99,Quik Piks,L/D,80,7,4,1,1,0,0,0,0,1,0,0,0
-Wild Rice and Quinoa Salad,,Quik Piks,L/D,100,4,14,3,1,0,0,0,0,1,0,0,0
 "Bacon, Egg, and Cheese Burrito",7.29,Quik Piks,L/D,1140,76,53,64,0,1,1,1,0,0,0,0,0
 California Chicken Club on Croissant,7.29,Quik Piks,L/D,710,36,24,67,0,1,1,1,0,0,0,1,0
 Fresh Mozzarella Tomato Basil Focaccia,7.29,Quik Piks,L/D,450,30,20,24,1,1,0,1,0,1,0,0,0
@@ -287,7 +266,6 @@ Spicy Tuna and California Roll,8.99,Quik Piks,L/D,620,27,78,14,0,0,1,0,1,0,0,1,0
 Veggie Roll,8.99,Quik Piks,L/D,320,6,53,9,1,0,0,0,0,1,0,1,0
 Boston and Salmon Roll,8.99,Quik Piks,L/D,540,19,75,17,0,1,1,0,1,0,0,0,0
 Spicy California and Boston Roll,8.99,Quik Piks,L/D,290,18,24,9,0,1,1,0,1,1,0,0,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
 California and Cucumber Roll,8.99,Quik Piks,L/D,430,9,79,8,0,0,1,0,1,1,0,1,0
 Large Roll,8.99,Quik Piks,L/D,720,19,111,21,0,0,1,0,1,0,0,0,0
 Gourmet Wrap ,6.15,Stephanie's ,L/D,530,24,41,36,0,1,1,1,0,0,0,0,0
@@ -308,7 +286,6 @@ Greek Salad with Chicken ,5.5,Stephanie's ,L/D,200,6,15,21,0,0,0,0,0,1,0,0,0
 Potato Salad,3.1,Stephanie's ,L/D,120,1,26,2,1,0,1,0,0,1,0,0,0
 Tuna Salad,3.55,Stephanie's ,L/D,180,4.5,2,30,0,0,1,0,1,1,0,0,0
 Pasta Salad,3.1,Stephanie's ,L/D,160,0.5,32,6,1,0,0,1,0,1,0,0,0
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
 Buffalo Chicken on Brioche,7.29,Downtown Deli,L/D,730,45,66,16,0,1,1,1,0,0,0,1,0
 California Chicken Club ,7.29,Downtown Deli,L/D,740,43,37,53,0,1,1,1,0,0,0,0,0
 Curried Chicken Salad on Ciabatta,7.29,Downtown Deli,L/D,610,24,70,29,0,0,1,1,0,0,0,1,0
@@ -322,9 +299,9 @@ Turkey and Cheddar on Bagel,7.29,Downtown Deli,L/D,520,24,38,39,0,1,1,1,0,0,0,1,
 BLT with Tarragon Mayo and Banana Peppers,7.29,Downtown Deli,L/D,1170,101,2,57,0,0,1,1,0,0,0,1,0
 Balsamic Roasted Vegetables on Focaccia,7.29,Downtown Deli,L/D,250,0.5,51,6,1,0,0,1,0,1,0,0,0
 Turkey with Cranberry Orange and Provolone on Kaiser,7.29,Downtown Deli,L/D,460,17,41,38,0,1,1,1,0,1,0,0,0
-16oz Brisk Rasberry Iced Tea,1.75,underground ,B/L/D,160,0,41,0,,,,,,,,,
-16oz Diet Pepsi Cola,1.75,underground ,B/L/D,0,0,0,0,,,,,,,,,
-16oz Fruit Punch,1.75,underground ,B/L/D,260,0,66,0,,,,,,,,,
-16oz Mountain Dew,1.75,underground ,B/L/D,220,0,62,0,,,,,,,,,
-16oz Pepsi Cola,1.75,underground ,B/L/D,200,0,56,0,,,,,,,,,
-16 oz Sierra Mist,1.75,underground ,B/L/D,200,0,52,0,,,,,,,,,
+16oz Brisk Rasberry Iced Tea,1.75,underground ,B/L/D,160,0,41,0,1,0,0,0,0,0,0,0,0
+16oz Diet Pepsi Cola,1.75,underground ,B/L/D,0,0,0,0,1,0,0,0,0,0,0,0,0
+16oz Fruit Punch,1.75,underground ,B/L/D,260,0,66,0,1,0,0,0,0,0,0,0,0
+16oz Mountain Dew,1.75,underground ,B/L/D,220,0,62,0,1,0,0,0,0,0,0,0,0
+16oz Pepsi Cola,1.75,underground ,B/L/D,200,0,56,0,1,0,0,0,0,0,0,0,0
+16 oz Sierra Mist,1.75,underground ,B/L/D,200,0,52,0,1,0,0,0,0,0,0,0,0

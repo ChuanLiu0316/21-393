@@ -35,6 +35,10 @@ class Food(object):
         for food in food_entries:
             if 'L/D' in food['Meal Time']:
                 # need break up these two.
+                try:
+                    food['Calories'] = 4.0 * float(food['Protein']) + 4.0* float(food['Carbohydrates']) +9.0*float(food['Fat'])
+                except Exception as e:
+                    print e
                 L_instance = copy(food)
                 D_instance = copy(food)
                 L_instance['Meal Time'] = 'L'
@@ -42,5 +46,9 @@ class Food(object):
                 foods.append(L_instance)
                 foods.append(D_instance)
             else:
+                try:
+                    food['Calories'] = 4.0 * float(food['Protein']) + 4.0* float(food['Carbohydrates']) + 9.0*float(food['Fat'])
+                except Exception as e:
+                    print e
                 foods.append(food)   
         return foods
