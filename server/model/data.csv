@@ -1,4 +1,4 @@
-Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllery
+Name,Price,Restaurant,Meal Time,Calories,Fat,Carbohydrates,Protein,Vegetarian,DairyAllergy,EggAllergy,WheatAllergy,FishAllergy,HealthyChoice,TreenutAllergy,SoyAllergy,PeanutAllergy
 Breakfast Quesadilla,5.75,underground,B,530,32,35,25,1,1,1,1,0,0,0,0,0
 Breakfast Sandwich Bagel,4.5,underground,B,520,16,65,29,0,1,1,1,0,0,0,0,0
 3 Egg Omelette,4.5,underground,B,640,51,16,26,1,1,1,1,0,0,0,0,0
