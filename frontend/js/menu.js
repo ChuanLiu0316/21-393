@@ -1,6 +1,9 @@
 $(document).ready(function(){
     var data = JSON.parse(localStorage.getItem('foods'));
     console.log(data);
+    if(data.length == 0){
+        // no
+    }
     var test_food1 = {
        Time: 0,
        Price: 1.4,
@@ -40,7 +43,7 @@ $(document).ready(function(){
        Vegetarian: "1",
        WheatAllergy: "1"
     }
-    //var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
+    // var data = [test_food4, test_food4, test_food4, test_food4, test_food4, test_food4];
     showMenu(data);
     computeTotal(data);
     // button to go back to homepage
@@ -134,6 +137,11 @@ function showFoodDetail(food){
     $("#food_calorie").html(food["Calories"]);
     $("#food_carb").html(food["Carbohydrates"]);
     $("#food_price").html(food["Price"]);
+    for(var key in food){
+        if((key.indexOf("Allergy")!=-1 && food[key] == "1") || (key == "Vegetarian")){
+            $("#food_special").html($("#food_special").html()+" " + key)
+        }
+    }
     $("#windows").show();
     $('#mybg').show().height( $(document).height() ).css({'opacity':0.7});
 }
