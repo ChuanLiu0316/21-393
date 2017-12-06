@@ -40,13 +40,13 @@ Philly Cheese Steak with Beef ,7.99,CM Cafe,L/D,750,41,46,46,0,0,0,1,0,0,0,0,0
 Popcorn Shrimp Basket,7.99,CM Cafe,L/D,310,2.5,47,23,0,0,1,1,1,0,0,0,
 Sweet and Spicy Chicken and Waffles ,7.99,CM Cafe,L/D,860,46,99,20,0,1,1,1,0,0,0,1,
 BBQ Wings ,8.29,CM Cafe,L/D,1000,60,56,57,0,0,0,0,0,0,0,0,
-Bacon Breakfast Sandwith,,Zebra Lounge,B,590,35,41,23,0,1,1,1,0,0,0,0,
-PB Banana Crunch,,Zebra Lounge,B,780,39,97,23,1,1,0,1,0,0,0,1,1
-Sausage Breakfast Sandwich,,Zebra Lounge,B,600,34,42,28,0,1,1,1,0,0,0,0,0
-Chicken Caesar Wrap,,Zebra Lounge,B/L/D,730,42,51,36,0,0,1,1,1,,,1,
-Southwest Wrap,,Zebra Lounge,B/L/D,980,68,55,40,0,1,1,1,0,,,0,
-Veggie Wrap,,Zebra Lounge,B/L/D,440,21,57,13,1,0,0,1,0,,,0,
-Italian Sub,,Zebra Lounge,B/L/D,580,32,48,31,0,1,0,1,0,,,0,
+Bacon Breakfast Sandwith,4.25,Zebra Lounge,B,590,35,41,23,0,1,1,1,0,0,0,0,
+PB Banana Crunch,4.25,Zebra Lounge,B,780,39,97,23,1,1,0,1,0,0,0,1,1
+Sausage Breakfast Sandwich,4.25,Zebra Lounge,B,600,34,42,28,0,1,1,1,0,0,0,0,0
+Chicken Caesar Wrap,6.25,Zebra Lounge,B/L/D,730,42,51,36,0,0,1,1,1,,,1,
+Southwest Wrap,6.25,Zebra Lounge,B/L/D,980,68,55,40,0,1,1,1,0,,,0,
+Veggie Wrap,6.25,Zebra Lounge,B/L/D,440,21,57,13,1,0,0,1,0,,,0,
+Italian Sub,6.25,Zebra Lounge,B/L/D,580,32,48,31,0,1,0,1,0,,,0,
 Tuna Salad Deli Sandwich ,6,underground,L/D,410,18,34,29,0,1,1,0,1,1,0,1,0
 5th Ave Grilled Cheese,5.5,City Grill,L/D,600,43,26,29,1,1,0,1,0,0,0,0,0
 BBQ Burger,6.15,City Grill,L/D,840,45,67,42,0,1,1,1,0,0,0,1,0
@@ -166,7 +166,7 @@ Macaroni Salad,2.15,EVGEFSTOS,L/D,150,15,4,1,1,0,1,1,0,1,0,1,0
 Roasted Vegetable,2.15,EVGEFSTOS,L/D,20,1.5,3,1,1,0,0,0,0,1,0,0,0
 Quinoa and Sweet Potato Salad,2.15,EVGEFSTOS,L/D,260,10,38,7,1,0,0,0,0,1,0,0,0
 Apple Dumpling,4.85,Tazza D' Oro,B,570,23,87,6,1,1,0,1,0,0,0,0,0
-Asiago Cheese Bagle,1.39,Au bon pain,B/L/D,300,6,68,18,0,1,0,1,0,0,0,1,0
+Asiago Cheese Bagle,1.29,Au bon pain,B/L/D,300,7,46,13,0,1,0,1,0,0,0,1,0
 Blueberry Muffin,2.25,Tazza D' Oro,B,440,21,57,5,0,1,1,1,0,0,0,0,0
 Chocolate Chunk Brownie,1.75,Zebra Lounge,B,310,18,37,4,0,1,1,1,0,0,0,1,0
 Cranberry Scone,2.5,Zebra Lounge,B,500,23,71,5,1,1,1,1,0,0,0,0,0
@@ -185,40 +185,22 @@ Quinoa Bowl,9.5,Tazza D' Oro,L/D,470,20,60,18,1,0,0,0,0,0,0,0,0
 Fall Farro Salad,3.75,Tazza D' Oro,L/D,470,19,56,22,0,1,0,0,0,0,0,1,0
 Bean Salad,3.75,Tazza D' Oro,L/D,185,8,27,8,1,1,0,0,0,0,0,1,0
 Potato Salad,3.25,Tazza D' Oro,L/D,211,18,12,2,1,1,1,0,0,0,0,1,0
-Chicken Caesar Salad ,,Zebra Lounge,L/D,470,18,28,49,0,1,0,1,9,1,0,0,0
-Spinach Salad,,Zebra Lounge,L/D,410,20,44,16,1,1,0,0,0,1,1,0,0
-Boston Clam Chowder Soup Large,,Zebra Lounge,L/D,380,18,42,12,0,1,0,0,1,1,0,1,0
-Boston Clam Chowder Soup Small,,Zebra Lounge,L/D,250,12,28,8,0,1,0,0,1,1,0,1,0
-Broccoli Cheese Soup Large,,Zebra Lounge,L/D,430,32,26,16,1,1,0,1,0,0,0,0,0
-Broccoli Cheese Soup Small,,Zebra Lounge,L/D,260,19,15,9,1,1,0,1,0,0,0,0,0
-Buffalo Chicken Soup Large,,Zebra Lounge,L/D,550,37,33,26,0,1,0,0,0,0,0,1,0
-Buffalo Chicken Soup Small,,Zebra Lounge,L/D,370,25,22,17,0,1,0,0,0,0,0,1,0
-Chicken Dumpling Soup Large,,Zebra Lounge,L/D,410,8,61,22,0,1,1,1,0,1,0,1,0
-Chicken Dumpling Soup Small,,Zebra Lounge,L/D,280,6,41,15,0,1,1,1,0,1,0,1,0
-Chicken Noodle Soup Large,,Zebra Lounge,L/D,150,2.5,21,14,0,0,1,1,0,1,0,1,0
-Chicken Noodle Soup Small,,Zebra Lounge,L/D,100,1.5,14,9,0,0,1,1,0,1,0,1,0
-Chicken Wild Rice Soup Large ,,Zebra Lounge,L/D,360,19,31,14,0,1,0,1,0,0,0,0,0
-Chicken Wild Rice Soup Small,,Zebra Lounge,L/D,240,13,21,10,0,1,0,1,0,0,0,0,0
-Chili Large,,Zebra Lounge,L/D,350,12,37,22,0,0,0,1,0,1,0,1,0
-Chili Small,,Zebra Lounge,L/D,230,8,25,15,0,0,0,1,0,1,0,1,0
-Cream of Brocolli Soup Large,,Zebra Lounge,L/D,390,18,42,16,1,1,0,1,0,1,0,1,0
-Cream of Brocolli Soup Small,,Zebra Lounge,L/D,270,13,29,11,1,1,0,1,0,1,0,1,0
-Garden Vegetable Soup Large,,Zebra Lounge,L/D,210,1,45,6,1,0,0,1,0,1,0,0,0
-Garden Vegetable Soup Small,,Zebra Lounge,L/D,150,1,32,5,1,0,0,1,0,1,0,0,0
-Italian Ravioli Soup Large,,Zebra Lounge,L/D,280,7,51,8,1,1,1,1,0,1,0,0,0
-Italian Ravioli Soup Small,,Zebra Lounge,L/D,190,4.5,34,5,1,1,1,1,0,1,0,0,0
-Italian Wedding Soup Large,,Zebra Lounge,L/D,330,13,38,15,0,1,0,1,0,1,0,0,0
-Italian Wedding Soup Small,,Zebra Lounge,L/D,230,9,26,11,0,1,0,1,0,1,0,0,0
-Minestrone Soup Large,,Zebra Lounge,L/D,250,2,47,11,0,1,1,1,0,1,0,0,0
-Minestrone Sou Small,,Zebra Lounge,L/D,160,1,30,7,0,1,1,1,0,1,0,0,0
-Potato Leek Soup Large,,Zebra Lounge,L/D,340,11,55,9,1,1,0,1,0,1,0,1,0
-Potato Leek Soup Small,,Zebra Lounge,L/D,240,8,39,6,1,1,0,1,0,1,0,1,0
-Tomato Florentine Soup Large,,Zebra Lounge,L/D,250,2,51,7,0,1,1,1,0,1,0,0,0
-Tomato Florentien Soup Small,,Zebra Lounge,L/D,160,1,33,5,0,1,1,1,0,1,0,0,0
-Ultimate Baked Potato Soup Large,,Zebra Lounge,L/D,530,25,63,14,0,1,0,1,0,0,0,1,0
-Ultimate baked Potato Soup Small,,Zebra Lounge,L/D,360,17,43,9,0,1,0,1,0,0,0,1,0
-Vegatable Beef Barley Soup Large,,Zebra Lounge,L/D,290,3.5,46,15,0,0,0,1,0,1,0,1,0
-Vegetable Beef Barley Soup Small,,Zebra Lounge,L/D,180,2,29,10,0,0,0,1,0,1,0,1,0
+Chicken Caesar Salad ,6.25,Zebra Lounge,L/D,470,18,28,49,0,1,0,1,9,1,0,0,0
+Spinach Salad,6.25,Zebra Lounge,L/D,410,20,44,16,1,1,0,0,0,1,1,0,0
+Boston Clam Chowder Soup Large,4.5,Zebra Lounge,L/D,380,18,42,12,0,1,0,0,1,1,0,1,0
+Broccoli Cheese Soup Large,3.5,Zebra Lounge,L/D,430,32,26,16,1,1,0,1,0,0,0,0,0
+Buffalo Chicken Soup Large,4.5,Zebra Lounge,L/D,550,37,33,26,0,1,0,0,0,0,0,1,0
+Chicken Dumpling Soup Large,4.5,Zebra Lounge,L/D,410,8,61,22,0,1,1,1,0,1,0,1,0
+Chicken Noodle Soup Large,4.5,Zebra Lounge,L/D,150,2.5,21,14,0,0,1,1,0,1,0,1,0
+Chicken Wild Rice Soup Large ,4.5,Zebra Lounge,L/D,360,19,31,14,0,1,0,1,0,0,0,0,0
+Chili Large,4.5,Zebra Lounge,L/D,350,12,37,22,0,0,0,1,0,1,0,1,0
+Cream of Brocolli Soup Large,3.5,Zebra Lounge,L/D,390,18,42,16,1,1,0,1,0,1,0,1,0
+Garden Vegetable Soup Large,3.5,Zebra Lounge,L/D,210,1,45,6,1,0,0,1,0,1,0,0,0
+Italian Wedding Soup Large,4.5,Zebra Lounge,L/D,330,13,38,15,0,1,0,1,0,1,0,0,0
+Potato Leek Soup Large,3.5,Zebra Lounge,L/D,340,11,55,9,1,1,0,1,0,1,0,1,0
+Tomato Florentine Soup Large,3.5,Zebra Lounge,L/D,250,2,51,7,0,1,1,1,0,1,0,0,0
+Ultimate Baked Potato Soup Large,3.5,Zebra Lounge,L/D,530,25,63,14,0,1,0,1,0,0,0,1,0
+Vegatable Beef Barley Soup Large,4.5,Zebra Lounge,L/D,290,3.5,46,15,0,0,0,1,0,1,0,1,0
 Cantaloupe Fruit Cup,3.59,Quik Piks,L/D,100,0.5,23,2,1,0,0,0,0,1,0,0,0
 Grapes Fruit Cup,3.59,Quik Piks,L/D,200,0,51,2,1,0,0,0,0,1,0,0,0
 Hard Cooked Egg,1.69,Quik Piks,L/D,70,4.5,1,6,1,0,1,0,0,0,0,0,0
@@ -305,3 +287,8 @@ Turkey with Cranberry Orange and Provolone on Kaiser,7.29,Downtown Deli,L/D,460,
 16oz Mountain Dew,1.75,underground ,B/L/D,220,0,62,0,1,0,0,0,0,0,0,0,0
 16oz Pepsi Cola,1.75,underground ,B/L/D,200,0,56,0,1,0,0,0,0,0,0,0,0
 16 oz Sierra Mist,1.75,underground ,B/L/D,200,0,52,0,1,0,0,0,0,0,0,0,0
+Double Chocolate midlife Cookie,1.89,Au bon pain,B/L/D,370,19,50,5,0,1,1,1,0,0,1,1,0
+Thai peanut,6.49,Au bon pain,B/L/D,540,17,72,25,0,0,0,1,0,0,1,1,1
+Napa Chicken with Avocado Wrap,6.89,Au bon pain,B/L/D,500,21,55,23,0,0,1,1,0,0,0,1,0
+Turkey Swiss Sandwich ,6.89,Au bon pain,B/L/D,660,28,66,42,0,1,0,1,0,0,1,1,1
+Everything bagel ,1.29,Au bon pain,B/L/D,250,2,50,8,0,0,0,1,0,0,0,1,0
