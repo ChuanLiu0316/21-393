@@ -57,8 +57,7 @@ $(document).ready(function(){
         //console.log(idx);
         showFoodDetail(data[idx]);
     });
-    var left = ($(document).width() - $('#windows').width())  /2;
-    $('#windows').css({left:left});
+
     $("#mybg").hide();
     $("#windows").hide();
     $("#mybg").click(function () {
@@ -147,6 +146,8 @@ function showFoodDetail(food){
             $("#food_special").html($("#food_special").html() + " " + key)
         }
     }
+    var left = ($(document).width() - $('#windows').width())  /2;
+    $('#windows').css({left:left});
     $("#windows").show();
     $('#mybg').show().height( $(document).height() ).css({'opacity':0.7});
 }
